@@ -12,7 +12,7 @@ const Landing = props => {
                     nisi ut aliquip ex ea commodo consequat. 
                 </p>
                 <p className="lead">
-                    <a className="btn btn-lg btn-secondary">Let's work together</a>
+                    <a className="btn btn-lg btn-secondary" href='#'>Let's work together</a>
                 </p>
             </main>
 
