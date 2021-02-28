@@ -10,7 +10,7 @@ const Landing = ({setPage,className}) => {
     const introClass = 'text-xl';
     const buttonGroupClass = 'flex'
     const mainTextClass = 'flex flex-col w-1/2 p-5 justify-center';
-    const mainImageClass = 'w-1/2 bg-white flex';
+    // const mainImageClass = 'w-1/2 bg-white flex';
 
     return(
         <main className="flex h-2/3">
