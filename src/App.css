@@ -21,6 +21,7 @@ a:hover {
 
 
 .cover-container {
+  min-width: 1000px;
   max-width: 70em;
   min-height: 100vh;
 }
@@ -38,6 +39,7 @@ a:hover {
 }
 
 .nav-masthead .nav-link {
+  cursor: pointer;
   padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
@@ -63,9 +65,9 @@ a:hover {
 /*
  * Cover
  */
-.cover {
+/* .cover {
   padding: 0 1.5rem;
-}
+} */
 
 
 .cover .btn-lg {
@@ -84,7 +86,7 @@ a:hover {
   }
   .cover {
     text-align: justify;
-    width: 55%;
+    /* width: 55%; */
     color: white;
   }
   .cover-heading {
@@ -97,4 +99,41 @@ a:hover {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  align-self: center;
+}
+
+.project > .card {
+    height: 500px;
+    width: 500px;
+    margin: 1rem; 
+}
+
+.project > .description {
+    padding: 1rem;
+    font-family: 'Quattrocento', serif;
+    font-size: large;
+    text-align:left;
+    background-color:rgb(111,78,55);
+}
+
+
+.description > .heading {
+    text-align: left;
+    font-size:x-large;
+}
+
+.slider-dots > .active {
+  background-color: rgb(92, 90, 87);
+}
+
+.dot {
+    width:10px;
+    height:10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.dot:hover {
+    background-color: rgb(92, 90, 87);
+    cursor: pointer;
 }
