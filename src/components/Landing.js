@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import characterModel from '../images/characterModel.png';
 
 const Landing = ({setPage,className}) => {
 
