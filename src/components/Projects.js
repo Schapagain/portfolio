@@ -1,4 +1,3 @@
-import '../css/projects.css'
 import CafeRio from './CafeRio';
 import TrackIt from './TrackIt';
 import {useState} from 'react';

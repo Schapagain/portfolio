@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '../css/projects.css'
 import cafeRioImage from '../images/cafeRio.png';
 
 const CafeRio = props => {
