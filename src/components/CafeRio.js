@@ -5,7 +5,7 @@ const CafeRio = props => {
     return(
         <div className="flex flex-col md:flex-row w-full">
                <div className="w-full md:w-1/2">
-                    <img className="rounded-xl w-full" src={cafeRioImage} alt="screenshot of a cafeteria website"/>
+                    <img className="rounded-xl w-full object-contain" src={cafeRioImage} alt="screenshot of a cafeteria website"/>
                </div>
                <div className="m-0.5 p-3 w-full md:w-1/2">
                    <p className="">

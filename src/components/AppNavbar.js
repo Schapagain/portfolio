@@ -18,7 +18,7 @@ const AppNavbar = ({className,currentPage,setPage}) => {
     });
 
   return (
-    <header className="flex justify-between">
+    <header className="flex mb-10 justify-between">
             <h3 className=""> Sandesh Chapagain </h3>
             <div className="flex space-x-4">
                 <div>
