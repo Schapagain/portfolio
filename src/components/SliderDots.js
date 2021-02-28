@@ -3,7 +3,7 @@ const Dot = ({setProject,projectName,currentProject}) => {
     return (
         <div 
         onClick={() => setProject(projectName)} 
-        className={`${currentProject === projectName ? "active " : ""}dot mt-3 m-2`}
+        className={`${currentProject === projectName ? "bg-gray-400" : "bg-white"} m-2 w-5 cursor-pointer rounded h-5`}
         >
         </div>
     )
@@ -12,7 +12,7 @@ const Dot = ({setProject,projectName,currentProject}) => {
 const SliderDots = ({projectNames,setProject,currentProject}) => {
 
     return(
-        <div className="slider-dots d-flex justify-content-center">
+        <div className="flex justify-center">
             {projectNames && 
             projectNames.map(projectName => 
             <Dot 

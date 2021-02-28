@@ -1,32 +1,53 @@
 import React from 'react';
-import {
-  Nav,
-  NavItem,
-  NavLink,
+import classNames from 'classnames';
 
-} from 'reactstrap';
+const AppNavbar = ({className,currentPage,setPage}) => {
 
-const AppNavbar = ({currentPage,setPage}) => {
+  const navLinkClass = 'cursor-pointer p-1 rounded-lg hover:bg-gray-200';
+
+  const homeClass = classNames(className, navLinkClass, {
+    'bg-white': currentPage === "home",
+    });
+  
+  const projectsClass = classNames(className, navLinkClass, {
+    'bg-white': currentPage === "projects",
+    });
+
+  const contactClass = classNames(className, navLinkClass, {
+    'bg-white': currentPage === "contact",
+    });
 
   return (
-    <header className="masthead mb-auto">
-        <div className="inner">
-            <h3 className="masthead-brand"> Sandesh Chapagain </h3>
-            <Nav className="nav-masthead justify-content-center">
-                <NavItem>
-                    <NavLink onClick={()=>{console.log('setting home');setPage("home")}} className={`nav-link${currentPage === "home" ? " active":""}`}>Home</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink onClick={()=>{console.log('setting pr0jects');setPage("projects")}} className={`nav-link${currentPage === "projects" ? " active":""}`}>Projects</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className={`nav-link${currentPage === "contact" ? " active":""}`}>Contact</NavLink>
-                </NavItem>
+    <header className="flex justify-between">
+            <h3 className=""> Sandesh Chapagain </h3>
+            <div className="flex space-x-4">
+                <div>
+                    <div 
+                    onClick={()=>setPage("home")} 
+                    className={homeClass}
+                    >Home</div>
+                </div>
+                <div>
+                    <div 
+                    onClick={()=>setPage("projects")} 
+                    className={projectsClass}
+                    >Projects</div>
+                </div>
+                <div>
+                    <div 
+                    onClick={()=>setPage("contact")} 
+                    className={contactClass}
+                    >Contact</div>
+                </div>
                 
-            </Nav>
-        </div>
+            </div>
     </header>
   );
 }
 
 export default AppNavbar;
+
+// var btnClass = classNames('btn', this.props.className, {
+//   'btn-pressed': this.state.isPressed,
+//   'btn-over': !this.state.isPressed && this.state.isHovered
+// });
