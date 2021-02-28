@@ -4,7 +4,7 @@ import cafeRioImage from '../images/cafeRio.png';
 const CafeRio = props => {
     return(
         <>
-            <main role="main" className="d-flex project mx-auto cover">
+            <main role="main" className="d-flex project mx-auto">
                <div className="card">
                     <img src={cafeRioImage} alt="screenshot of a cafeteria website"/>
                </div>

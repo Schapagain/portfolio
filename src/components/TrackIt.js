@@ -3,7 +3,7 @@ import cafeRioImage from '../images/trackIt.png';
 
 const TrackIt = props => {
     return(
-            <main role="main" className="d-flex project mx-auto cover">
+            <main role="main" className="d-flex project mx-auto">
                <div className="card">
                     <img src={cafeRioImage} alt="screenshot of a cafeteria website"/>
                </div>

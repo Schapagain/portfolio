@@ -5,7 +5,7 @@ const Landing = ({setPage}) => {
         <main role="main" className="inner cover">
             <h1 className="cover-heading">Hi there.</h1>
             <p className="lead">
-                I am a reader. I read fiction, technical documentations, and philosophy.
+                I am a reader. I read fiction, technical documentations, and, philosophy.
 
                 {/* I am a software engineer, and I love building cool stuff. 
                 Simplicity and minimalism are some of my core values, and I strive to build 
