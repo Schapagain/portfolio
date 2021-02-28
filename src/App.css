@@ -86,7 +86,7 @@ a:hover {
   }
   .cover {
     text-align: justify;
-    /* width: 55%; */
+    width: 55%;
     color: white;
   }
   .cover-heading {
@@ -123,17 +123,17 @@ a:hover {
 }
 
 .slider-dots > .active {
-  background-color: rgb(92, 90, 87);
+  background-color: white;
 }
 
 .dot {
     width:10px;
     height:10px;
-    background-color: white;
+    background-color: rgb(92, 90, 87);
     border-radius: 15px;
 }
 
 .dot:hover {
-    background-color: rgb(92, 90, 87);
+    background-color: white;
     cursor: pointer;
 }
