@@ -3,7 +3,7 @@ import Landing from './components/Landing';
 import AppNavbar from './components/AppNavbar';
 import { faCode, faCheckCircle, faMoneyCheckAlt ,faMugHot } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 import Projects from './components/Projects';
 library.add(faCode,faCheckCircle,faMoneyCheckAlt,faMugHot);
 
@@ -11,8 +11,6 @@ library.add(faCode,faCheckCircle,faMoneyCheckAlt,faMugHot);
 function App() {
 
   const [page,setPage] = useState("home");
-
-  useEffect(()=>console.log(page),[page]);
 
   return (
     <div className="App">
