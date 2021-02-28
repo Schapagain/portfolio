@@ -1,19 +1,17 @@
 import classNames from 'classnames';
 
-const Landing = ({setPage,className}) => {
+const Landing = ({className,Ref,scrollToProjects,scrollToContact}) => {
 
-    const buttonClass = classNames(className, 'bg-white p-3 mt-2 rounded-md', {
-
-    });
-
+    const mainClass = classNames(className,'flex justify-center text-center');
+    const buttonClass = 'hover:bg-gray-600 hover:text-white bg-white p-3 ml-2 mr-2 mt-5 rounded-md';
     const headingClass = 'text-3xl mb-2';
     const introClass = 'text-xl';
-    const buttonGroupClass = 'flex'
-    const mainTextClass = 'flex flex-col w-1/2 p-5 justify-center';
+    const buttonGroupClass = 'flex justify-center'
+    const mainTextClass = 'flex z-30 flex-col w-1/2 p-5 justify-center';
     // const mainImageClass = 'w-1/2 bg-white flex';
 
     return(
-        <main className="flex h-2/3">
+        <main ref={Ref} className={mainClass}>
             <div className={mainTextClass}>
                 <h1 className={headingClass}>Hi there.</h1>
                 <div className={introClass}>
@@ -25,12 +23,12 @@ const Landing = ({setPage,className}) => {
                     </p>
                     {/* I am a software engineer, and I love building cool stuff. 
                     Simplicity and minimalism are some of my core values, and I strive to build 
-                    Elegant systems, and clean interface designs - be it APIs, or UIs - inspire me, and 
+                    sophisticated, yet elegant systems. and clean interface designs - be it APIs, or UIs - inspire me, and 
                     I strive to build products  */}
                 </div>
                 <div className={buttonGroupClass}>
-                    {/* <a onClick={(e)=>{e.preventDefault();setPage("contact")}} className={buttonClass} href='/#'>Contact me</a> */}
-                    <a onClick={(e)=>{e.preventDefault();setPage("projects")}} className={buttonClass} href='/#'>Chekout my projects</a>
+                    <a onClick={(e)=>{e.preventDefault();scrollToContact()}} className={buttonClass} href='/#'>Get in touch</a>
+                    <a onClick={(e)=>{e.preventDefault();scrollToProjects()}} className={buttonClass} href='/#'>Chekout my projects</a>
                 </div>    
             </div>
             {/* <div className={mainImageClass}>

@@ -1,16 +1,15 @@
 import CafeRio from './CafeRio';
 import TrackIt from './TrackIt';
-import {useState} from 'react';
-import SliderDots from './SliderDots';
+import classNames from 'classnames';
 
-const Projects = props => {
+const Projects = ({className,Ref}) => {
 
-    const [project,setProject] = useState("cafe-rio");
+    const mainClass = classNames(className,'flex flex-col pt-20 justify-around bg-green-300');
+    const projectClass = 'm-auto flex flex-col md:flex-row p-4';
     return(
-        <div className="flex flex-col justify-between h-2/3 md:h-1/2">
-            {project === "track-it" && <TrackIt />}
-            {project === "cafe-rio" && <CafeRio />}  
-            <SliderDots projectNames={["cafe-rio","track-it"]} currentProject={project} setProject={setProject} />
+        <div ref={Ref} className={mainClass}>
+            <TrackIt className={projectClass} />
+            <CafeRio className={projectClass} />
         </div>
     )
 }

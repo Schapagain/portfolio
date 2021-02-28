@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 
 const Dot = ({setProject,projectName,currentProject}) => {
     return (
@@ -9,10 +10,10 @@ const Dot = ({setProject,projectName,currentProject}) => {
     )
 }
 
-const SliderDots = ({projectNames,setProject,currentProject}) => {
-
+const SliderDots = ({projectNames,setProject,currentProject,className}) => {
+    const mainClass = classNames(className);
     return(
-        <div className="flex justify-center">
+        <div className={mainClass}>
             {projectNames && 
             projectNames.map(projectName => 
             <Dot 

@@ -1,9 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import cafeRioImage from '../images/cafeRio.png';
+import classNames from 'classnames';
 
-const CafeRio = props => {
+const CafeRio = ({className}) => {
+    
+    const mainClass = classNames(className,'w-full');
+
     return(
-        <div className="flex flex-col md:flex-row w-full">
+        <div className={mainClass}>
                <div className="w-full md:w-1/2">
                     <img className="rounded-xl w-full object-contain" src={cafeRioImage} alt="screenshot of a cafeteria website"/>
                </div>
