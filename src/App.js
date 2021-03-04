@@ -13,6 +13,7 @@ import {useRef} from 'react';
 import AppNavbar from './components/AppNavbar'
 import CafeRio from './components/CafeRio';
 import TrackIt from './components/TrackIt';
+import BlockByBlock from './components/BlockByBlock';
 
 library.add(
   faCode,
@@ -28,38 +29,49 @@ function App() {
     const contactRef = useRef(null);
     const scrollToContact = () => contactRef.current.scrollIntoView({behavior:'smooth'});
 
-    const firstProjectRef = useRef(null);
-    const scrollToFirstProject = () => firstProjectRef.current.scrollIntoView({behavior:'smooth'});
+    const cafeRioRef = useRef(null);
+    const scrollToCafeRio = () => cafeRioRef.current.scrollIntoView({behavior:'smooth'});
 
-    const secondProjectRef = useRef(null);
-    const scrollToSecondProject = () => secondProjectRef.current.scrollIntoView({behavior:'smooth'});
+    const trackItRef = useRef(null);
+    const scrollToTrackIt = () => trackItRef.current.scrollIntoView({behavior:'smooth'});
+
+    const blockByBlockRef = useRef(null);
+    const scrollToBlockByBlock = () => blockByBlockRef.current.scrollIntoView({behavior:'smooth'});
 
     const homeRef = useRef(null);
     const scrollToHome = () => homeRef.current.scrollIntoView({behavior:'smooth'});
 
-    const projectClass = 'mt-20 flex flex-col p-4 h-screen justify-center';
-    const mainClass = "container min-w-max-md max-w-screen-xl flex flex-col justify-between mx-auto back bg-blue-200"
+    const projectClass = 'w-full flex flex-col p-4 h-screen bg-indigo-200 justify-between';
+    const mainClass = "w-full min-w-max-md flex flex-col justify-between mx-auto back bg-blue-200"
 
   return (
     <div className={mainClass}>
         <Landing 
-        scrollToProjects={scrollToFirstProject} 
+        scrollToProjects={scrollToBlockByBlock} 
         scrollToContact={scrollToContact}
         Ref={homeRef} 
-        className="min-h-screen z-20 bg-blue-200"/>
+        className="min-h-screen z-20"/>
         <AppNavbar 
         scrollToContact={scrollToContact}
         scrollToHome={scrollToHome}
-        scrollToProjects={scrollToFirstProject}
-        className="flex justify-between p-2 mt-0 w-full fixed z-1 top-0 bg-blue-700 text-white"/>
+        scrollToProjects={scrollToBlockByBlock}
+        className="flex justify-between p-2 mt-0 w-full fixed z-1 top-0"/>
+        <BlockByBlock 
+        Ref={blockByBlockRef}
+        className={projectClass}
+        scrollDown={scrollToCafeRio}
+        scrollUp={scrollToHome}
+        />
         <CafeRio 
-        Ref={firstProjectRef} 
+        Ref={cafeRioRef} 
         className={projectClass} 
-        scrollToSecondProject={scrollToSecondProject}
+        scrollUp={scrollToBlockByBlock}
+        scrollDown={scrollToTrackIt}
         />
         <TrackIt 
-        scrollToFirstProject={scrollToFirstProject}
-        Ref={secondProjectRef}
+        scrollUp={scrollToCafeRio}
+        scrollDown={scrollToContact}
+        Ref={trackItRef}
         className={projectClass} />
         <ContactCard 
         Ref={contactRef} 
