@@ -1,18 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import trackItImage from '../images/trackIt.png';
 import classNames from 'classnames';
+import { BsBootstrap } from 'react-icons/bs';
+import { DiNodejsSmall, DiMongodb } from 'react-icons/di';
+import { FcScatterPlot } from 'react-icons/fc';
 
-const TrackIt = ({className, Ref, scrollToFirstProject}) => {
-    const mainClass = classNames(className,'w-full bg-purple-300');
+const TrackIt = ({className, Ref, scrollUp, scrollDown}) => {
+    const mainClass = classNames(className,'bg-between-the-clouds');
     const projectClass = "flex flex-col h-1/2 md:flex-row";
-    const buttonClass = 'animate-bounce  text-5xl hover:text-white mb-5';
+    const buttonClass = 'animate-bounce text-5xl hover:text-white mt-5';
+    const linkClass = "m-1 rounded-lg p-1 cursor-pointer underline hover:no-underline hover:text-white hover:bg-gray-800";
+    const iconClass = "mr-2 inline"
     return(
         <div ref={Ref} className={mainClass}>
-            <div className="flex transform rotate-180 relative font-thin justify-center invisible md:visible">
-                <a onClick={(e)=>{e.preventDefault();scrollToFirstProject()}} className={buttonClass} href='/#'>V</a>
-            </div>
+            {scrollUp && <div className="flex mt-10 transform rotate-180 relative font-thin justify-center invisible md:visible">
+                <a onClick={(e)=>{e.preventDefault();scrollUp()}} className={buttonClass} href='/#'>V</a>
+            </div>}
             <div className={projectClass}>
-                <div className="w-full flex">
+                <div className="w-full flex justify-center">
                     <img className="object-contain" src={trackItImage} alt="screenshot of a cafeteria website"/>
                 </div>
                 <div className="m-0.5 p-3 w-full flex flex-col justify-center animate-fadeIn">
@@ -26,27 +31,36 @@ const TrackIt = ({className, Ref, scrollToFirstProject}) => {
                     </p>
                     <p>
                         <FontAwesomeIcon icon="check-circle" className="mr-2"/>
-                            Categorization of transactions <br/>
-                            <FontAwesomeIcon icon="check-circle" className="mr-2"/>
-                            Cumulative plots of all activities in any chosen range<br/>
-                           className="rotate-90"i"  <FontAwesomeIcon icon="check-circle" className="mr-2"/>
-                            Bar plots to compare transactions acorss categories<br/>
-                            <FontAwesomeIcon icon="check-circle" className="mr-2"/>
-                            Awareness of your spending habits<br/>
+                        Categorization of transactions <br/>
+                        <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                        Cumulative plots of all activities in any chosen range<br/>
+                        <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                        Bar plots to compare transactions acorss categories<br/>
+                        <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                        Awareness of your spending habits<br/>
                     </p>
                     <p className="mt-3">
                         Technologies used:<br/>
-                        <FontAwesomeIcon icon="code" className="mr-2"/>
+                        <BsBootstrap className={iconClass}/>
                         Reactstrap<br/>
-                        <FontAwesomeIcon icon="code" className="mr-2"/>
+                        <DiNodejsSmall className={iconClass}/>
                         Node/Express<br/>
-                        <FontAwesomeIcon icon="code" className="mr-2"/>
+                        <FcScatterPlot className={iconClass}/>
                         Plotly.js<br/>
-                        <FontAwesomeIcon icon="code" className="mr-2"/>
+                        <DiMongodb className={iconClass}/>
                         MongoDB
                     </p>
                 </div>    
                 
+            </div>
+            <div className="flex mb-2 text-center relative font-lightweight justify-center invisible md:visible">
+                <p>
+                Thanks for visiting!<br/>
+                I am working my hardest to put up more of my projects here, but that's all of it for now.<br/>
+                Please 
+                <a onClick={(e)=>{e.preventDefault();scrollDown()}} className={linkClass} href='/#'>reach out</a>
+                for more information.
+                </p>
             </div>
         </div>
     )
