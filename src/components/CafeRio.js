@@ -1,16 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import cafeRioImage from '../images/cafeRio.png';
 import classNames from 'classnames';
+import { SiRedux, SiJsonwebtokens } from 'react-icons/si';
+import { GiCheckMark } from 'react-icons/gi';
+import { DiNodejsSmall, DiMongodb } from 'react-icons/di';
 
-const CafeRio = ({className, Ref, scrollToSecondProject}) => {
+const CafeRio = ({className, Ref, scrollUp, scrollDown}) => {
     const buttonClass = 'animate-bounce text-5xl hover:text-white mt-5';
-    const mainClass = classNames(className,'w-full');
-    const projectClass = "flex flex-col h-1/2 md:flex-row";
+    const mainClass = classNames(className,'bg-turq');
+    const projectClass = "flex flex-col h-full md:h-1/2 md:flex-row";
+    const iconClass = "mr-2 inline";
     return(
         <div ref={Ref} className={mainClass}>
+            {scrollUp && <div className="flex md:mt-10 transform rotate-180 relative font-thin justify-center invisible md:visible">
+                <a onClick={(e)=>{e.preventDefault();scrollUp()}} className={buttonClass} href='/#'>V</a>
+            </div>}
             <div className={projectClass}>
-                <div className="w-full flex">
-                        <img className="object-contain" src={cafeRioImage} alt="screenshot of a cafeteria website"/>
+                <div className="w-full justify-center flex">
+                        <img className="" src={cafeRioImage} alt="screenshot of a cafeteria website"/>
                 </div>
                 <div className="m-0.5 flex flex-col p-3 w-full justify-center">
                     <p className="">
@@ -21,31 +28,31 @@ const CafeRio = ({className, Ref, scrollToSecondProject}) => {
                             The idea was to make something that would help employees order food from their office cafeteria.    
                         </p>
                         <p>
-                            <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                            <GiCheckMark className={iconClass}/>
                             Registration with an office id card <br/>
-                            <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                            <GiCheckMark className={iconClass}/>
                             Email verifications to validate user accounts<br/>
-                            <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                            <GiCheckMark className={iconClass}/>
                             Secure payments through credit and debit cards<br/>
-                            <FontAwesomeIcon icon="check-circle" className="mr-2"/>
+                            <GiCheckMark className={iconClass}/>
                             Easy menu updates through an admin account<br/>
                         </p>
                         <p className="mt-3">
                             Technologies used:<br/>
-                            <FontAwesomeIcon icon="code" className="mr-2"/>
+                            <SiRedux className={iconClass} />
                             React/Redux<br/>
-                            <FontAwesomeIcon icon="code" className="mr-2"/>
+                            <DiNodejsSmall className={iconClass}/>
                             Node/Express<br/>
-                            <FontAwesomeIcon icon="code" className="mr-2"/>
+                            <SiJsonwebtokens className={iconClass}/>
                             JWTs<br/>
-                            <FontAwesomeIcon icon="code" className="mr-2"/>
+                            <DiMongodb className={iconClass}/>
                             MongoDB
                         </p>
                     </div>    
             </div>
-            <div className="flex relative font-thin justify-center invisible md:visible">
-                <a onClick={(e)=>{e.preventDefault();scrollToSecondProject()}} className={buttonClass} href='/#'>V</a>
-            </div>
+            {scrollDown && <div className="flex mb-10 relative font-thin justify-center invisible md:visible">
+                <a onClick={(e)=>{e.preventDefault();scrollDown()}} className={buttonClass} href='/#'>V</a>
+            </div>}
         </div>
     )
 }
