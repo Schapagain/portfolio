@@ -41,7 +41,7 @@ function App() {
     const homeRef = useRef(null);
     const scrollToHome = () => homeRef.current.scrollIntoView({behavior:'smooth'});
 
-    const projectClass = 'w-full flex flex-col p-4 h-screen bg-indigo-200 justify-between';
+    const projectClass = 'text-white w-full flex flex-col p-4 h-screen bg-indigo-200 justify-between';
     const mainClass = "w-full min-w-max-md flex flex-col justify-between mx-auto back bg-blue-200"
 
   return (
