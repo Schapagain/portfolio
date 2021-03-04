@@ -45,6 +45,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      'spring-rain': '#AEC3B3',
+      'calypso': '#276978',
     },
     spacing: {
       px: '1px',
