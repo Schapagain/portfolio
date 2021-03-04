@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 const AppNavbar = ({className,currentPage,scrollToContact, scrollToHome, scrollToProjects}) => {
 
-  const mainClass = classNames(className,'max-w-screen-xl');
+  const mainClass = classNames(className,' text-white bg-calypso');
   const navLinkClass = 'cursor-pointer p-1 rounded-lg hover:bg-white hover:text-black';
   const homeClass = classNames(navLinkClass, {
     'bg-white': currentPage === "home",
