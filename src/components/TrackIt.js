@@ -7,7 +7,7 @@ import { FcScatterPlot } from 'react-icons/fc';
 
 const TrackIt = ({className, Ref, scrollUp, scrollDown}) => {
     const mainClass = classNames(className,'bg-between-the-clouds');
-    const projectClass = "flex flex-col h-1/2 md:flex-row";
+    const projectClass = "flex flex-col h-1/2 md:flex-row-reverse";
     const buttonClass = 'animate-bounce text-5xl hover:text-white mt-5';
     const linkClass = "m-1 rounded-lg p-1 cursor-pointer underline hover:no-underline hover:text-white hover:bg-gray-800";
     const iconClass = "mr-2 inline"

@@ -6,8 +6,8 @@ import { GiCheckMark } from 'react-icons/gi';
 import { DiNodejsSmall, DiMongodb } from 'react-icons/di';
 
 const CafeRio = ({className, Ref, scrollUp, scrollDown}) => {
-    const buttonClass = 'animate-bounce text-5xl hover:text-white mt-5';
-    const mainClass = classNames(className,'bg-turq');
+    const buttonClass = 'animate-bounce text-5xl hover:text-black mt-5';
+    const mainClass = classNames(className,'text-white bg-turq');
     const projectClass = "flex flex-col h-full md:h-1/2 md:flex-row";
     const iconClass = "mr-2 inline";
     return(
