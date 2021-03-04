@@ -21,7 +21,10 @@ const CafeRio = ({className, Ref, scrollUp, scrollDown}) => {
                 </div>
                 <div className="m-0.5 flex flex-col p-3 w-full justify-center">
                     <p className="">
-                            Cafe Rio <FontAwesomeIcon icon="mug-hot" className="ml-1" />
+                    <a 
+                        href="https://github.com/Schapagain/cafe-rio" 
+                        target="_blank" 
+                        rel="noreferrer">Cafe Rio</a><FontAwesomeIcon icon="mug-hot" className="ml-1" />
                     </p>
                         <p className="mt-3 mb-3">
                             This is a web application we built for an online hackathon. 

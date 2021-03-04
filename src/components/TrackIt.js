@@ -22,7 +22,10 @@ const TrackIt = ({className, Ref, scrollUp, scrollDown}) => {
                 </div>
                 <div className="m-0.5 p-3 w-full flex flex-col justify-center animate-fadeIn">
                     <p className="mb-3">
-                        Track It <FontAwesomeIcon icon="money-check-alt" className="ml-1" />
+                    <a 
+                        href="https://github.com/Schapagain/fin-track-server" 
+                        target="_blank" 
+                        rel="noreferrer">Track It</a> <FontAwesomeIcon icon="money-check-alt" className="ml-1" />
                     </p>
                     <p className="mb-3">
                         I wrote simple Python scripts that exposed CLI functions to keep track of my incomes and expenses.

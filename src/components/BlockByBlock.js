@@ -21,7 +21,10 @@ const BlockByBlock = ({className, Ref, scrollUp, scrollDown}) => {
                 </div>
                 <div className="m-0.5 p-3 w-full flex flex-col justify-center animate-fadeIn">
                     <p className="mb-3">
-                        Block By Block <BsCalendar className="ml-1 inline" />
+                        <a 
+                        href="https://github.com/Schapagain/habit-tracker" 
+                        target="_blank" 
+                        rel="noreferrer">Block By Block</a> <BsCalendar className="ml-1 inline" />
                     </p>
                     <p className="mb-3">
                         This is a minimal full-stack application that allows users to 
