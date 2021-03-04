@@ -39,7 +39,7 @@ const BlockByBlock = ({className, Ref, scrollUp, scrollDown}) => {
                         <GiCheckMark className={iconClass}/>
                         Add notes and daily reflections<br/>
                         <GiCheckMark className={iconClass}/>
-                        Awareness of your day-to-day activity<br/>
+                        Be aware of your day-to-day activity<br/>
                     </p>
                     <p className="mt-3">
                         Technologies used:<br/>
