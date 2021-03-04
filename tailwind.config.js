@@ -1,10 +1,29 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      backgroundImage: theme => ({
+        // 'library':"url('images/libraryImage.jpg')",
+        // 'night-sky':"url('images/nightSky.jpg')",
+        'turq':'linear-gradient(to right, #136a8a, #267871)',
+        'hersheys':'linear-gradient(to right, #1e130c, #9a8478)',
+        'between-the-clouds':'linear-gradient(to right, #73c8a9, #373b44)',
+        'titanium':'linear-gradient(to right, #283048, #859398)'
+      }),
+      keyframes: {
+        'wiggle': {
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        'wiggle': 'wiggle 1s ease-in-out infinite',
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -132,6 +151,8 @@ module.exports = {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
+      point: '5px 50px 4px 5px rgba(0,0,0,1)',
+      test: '0px 50px 0px -10px rgba(0, 0, 0, 1)'
     },
     container: {},
     cursor: {
@@ -399,6 +420,10 @@ module.exports = {
           transform: 'none',
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
       },
     },
     letterSpacing: {
