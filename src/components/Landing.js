@@ -30,7 +30,7 @@ const Landing = ({className,Ref,scrollToProjects,scrollToContact}) => {
                 </div>
                 <div className={buttonGroupClass}>
                     <a onClick={(e)=>{e.preventDefault();scrollToContact()}} className={buttonClass} href='/#'>Get in touch</a>
-                    <a onClick={(e)=>{e.preventDefault();scrollToProjects()}} className={buttonClass} href='/#'>Chekout my projects</a>
+                    <a onClick={(e)=>{e.preventDefault();scrollToProjects()}} className={buttonClass} href='/#'>Checkout my projects</a>
                 </div>    
             </div>
             {/* <div className={mainImageClass}>
