@@ -47,6 +47,7 @@ module.exports = {
       pink: colors.pink,
       'spring-rain': '#AEC3B3',
       'calypso': '#276978',
+      'kabul': '#6D4B43'
     },
     spacing: {
       px: '1px',
