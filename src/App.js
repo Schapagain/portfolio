@@ -55,7 +55,7 @@ function App() {
         scrollToContact={scrollToContact}
         scrollToHome={scrollToHome}
         scrollToProjects={scrollToBlockByBlock}
-        className="flex justify-between p-2 mt-0 w-full fixed z-1 top-0"/>
+        className="flex justify-between p-2 mt-0 w-full fixed z-40 top-0"/>
         <BlockByBlock 
         Ref={blockByBlockRef}
         className={projectClass}
