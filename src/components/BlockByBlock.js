@@ -3,13 +3,13 @@ import { BsCalendar } from 'react-icons/bs';
 import { GiCheckMark } from 'react-icons/gi';
 import { SiTailwindcss } from 'react-icons/si';
 import { DiReact, DiNodejsSmall, DiMongodb } from 'react-icons/di';
-import BlockByBlockLanding from './BlockByBlock/Landing';
-import LeftSlider from './LeftSlider';
+import Landing from './BlockByBlock/Landing';
+import SlidingPanel from './SlidingPanel';
 
 const Description = () => {
     const iconClass = "mr-2 inline";
     return (
-        <div className="m-0.5 text-sm md:text-md bg-calypso text-white p-3 w-full rounded-xl flex flex-col justify-center">
+        <div className="m-0.5 bg-calypso text-white p-3 w-full rounded-xl flex flex-col justify-center">
             <p className="mb-3">
                 <a 
                 href="https://github.com/Schapagain/habit-tracker" 
@@ -48,7 +48,7 @@ const Description = () => {
 
 const WebSite = () => {
     return (
-        <BlockByBlockLanding />
+        <Landing />
     )
 }
 
@@ -61,7 +61,7 @@ const BlockByBlock = ({className, Ref, scrollUp, scrollDown}) => {
             {scrollUp && <div className="flex md:mt-10 transform rotate-180 relative font-thin justify-center invisible md:visible">
                 <a onClick={(e)=>{e.preventDefault();scrollUp()}} className={buttonClass} href='/#'>V</a>
             </div>}
-            <LeftSlider mainContent={<WebSite />} hiddenContent={<Description />} />
+            <SlidingPanel mainContent={<WebSite />} hiddenContent={<Description />} />
             {scrollDown && <div className="flex mb-10 relative font-thin justify-center invisible md:visible">
                 <a onClick={(e)=>{e.preventDefault();scrollDown()}} className={buttonClass} href='/#'>V</a>
             </div>}

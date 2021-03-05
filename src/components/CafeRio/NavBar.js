@@ -1,11 +1,12 @@
-
 const Brand = ({webLink}) => {
     return (
         <a 
-        className = "text-calypso my-auto font-medium text-3xl"
-        href={webLink} 
+        className = "text-white my-auto font-medium text-3xl"
+        href={webLink}
+        rel="noreferrer"
+        target="_blank"
         >
-            BlockByBlock
+            Café Río
         </a>
     );
 }
@@ -14,10 +15,12 @@ const NavLink = ({text,webLink}) => {
     return (
         <a 
         className = {
-            `p-2 font-medium text-calypso text-lg mx-4
-            transition ease-in-out duration-700 hover:bg-calypso hover:text-white rounded-xl`
+            `p-2 font-medium text-lg mx-4
+            transition ease-in-out duration-700 hover:bg-green-600 hover:text-white rounded-xl`
         }
         href={webLink}
+        rel="noreferrer"
+        target="_blank"
         >
             {text}
         </a>
