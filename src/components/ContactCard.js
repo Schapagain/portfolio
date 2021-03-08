@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classNames from 'classnames';
 
 const ContactCard = ({className,Ref}) => {
-    const mainClass = classNames(className,'flex flex-col justify-center bg-between-the-clouds')
+    const mainClass = classNames(className,'flex flex-col justify-center bg-theme-color')
 
     return(
         <div ref={Ref} className={mainClass}>
@@ -11,7 +11,7 @@ const ContactCard = ({className,Ref}) => {
                     I am always open to cool new ideas. <br/> 
                     Feel free to reach out!
                 </div>
-                <div className="bg-blue-400 rounded-lg mt-5">
+                <div className="bg-turq rounded-lg mt-5">
                     <h1 className="text-2xl text-center underline p-2">Sandesh Chapagain</h1>
                     <p className="text-sm text-center">chapagainsandesh {"{{89-1}}"} @gmail.com</p>
                     <div className="p-3 flex justify-center text-3xl">
