@@ -53,7 +53,7 @@ const Website = () => {
 
 const CafeRio = ({className, Ref, scrollUp, scrollDown}) => {
     const buttonClass = 'animate-bounce text-5xl hover:text-black mt-5';
-    const mainClass = classNames(className,'text-white bg-turq');
+    const mainClass = classNames(className,'text-white bg-theme-color');
     return(
         <div ref={Ref} className={mainClass}>
             {scrollUp && <div className="flex md:mt-10 transform rotate-180 relative font-thin justify-center invisible md:visible">
