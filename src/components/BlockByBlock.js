@@ -53,7 +53,7 @@ const WebSite = () => {
 }
 
 const BlockByBlock = ({className, Ref, scrollUp, scrollDown}) => {
-    const mainClass = classNames(className,'bg-between-the-clouds');
+    const mainClass = classNames(className,'bg-theme-color');
     const buttonClass = 'animate-bounce text-5xl hover:text-white mt-5';
     return(
         

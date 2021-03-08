@@ -11,7 +11,7 @@ module.exports = {
         // 'night-sky':"url('images/nightSky.jpg')",
         'cafeteria' : "url('images/cafeteria.jpg')", // Photo by Julia Sakelli from Pexels
         'coffee-on-desk' : "url('images/coffeeOnDesk.jpg')", // Photo by Jason Villanueva from Pexels
-        'calendars' : "url('images/calendars.jpg')", // Photo by Olya Kobruseva from Pexels
+        'calendar-in-bed' : "url('images/calendars.jpg')", // Photo by Olya Kobruseva from Pexels
         'turq':'linear-gradient(to right, #136a8a, #267871)',
         'hersheys':'linear-gradient(to right, #1e130c, #9a8478)',
         'between-the-clouds':'linear-gradient(to right, #73c8a9, #373b44)',
@@ -49,6 +49,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      'theme-color': '#A1B3B5', //hit gray
       'spring-rain': '#AEC3B3',
       'calypso': '#276978',
       'kabul': '#6D4B43',
