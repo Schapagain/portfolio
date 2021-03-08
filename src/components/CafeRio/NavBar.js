@@ -30,7 +30,7 @@ const NavLink = ({text,webLink}) => {
 const NavLinks = ({webLink}) => {
     return (
         <div className="hidden 2xl:flex ">
-            <NavLink webLink={webLink} text="Features" />
+            <NavLink webLink={webLink} text="Menu" />
             <NavLink webLink={webLink} text="About" />
             <NavLink webLink={webLink} text="Login" />
         </div>
