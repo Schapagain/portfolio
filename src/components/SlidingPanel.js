@@ -34,7 +34,7 @@ export default function SlidingPanel({ hiddenContent, mainContent }) {
     const websiteClass = classNames('flex-col flex justify-end z-10 lg:absolute w-full h-1/2 lg:h-full -left-0 top-0',{
 
     })
-    const descriptionClass = classNames('flex text-sm md:text-md lg:text-lg h-1/2 lg:h-full right-0 lg:absolute w-full lg:w-2/3');
+    const descriptionClass = classNames('flex text-xs lg:text-base 2xl:text-lg h-1/2 lg:h-full right-0 lg:absolute w-full lg:w-2/3');
 
     return (
         <div className="lg:relative flex-col lg:flex h-full lg:h-2/3 w-full md:w-2/3 lg:w-1/2 m-auto">
