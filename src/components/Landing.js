@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 const Landing = ({className,Ref,scrollToProjects,scrollToContact}) => {
 
-    const mainClass = classNames(className,'text-white flex justify-center text-center bg-turq');
+    const mainClass = classNames(className,'flex bg-theme-color justify-center text-center');
     const buttonClass = 'hover:bg-gray-600 hover:text-white text-black bg-white p-3 ml-2 mr-2 mt-5 rounded-md';
     const headingClass = 'text-3xl mb-2';
     const introClass = 'text-xl';
