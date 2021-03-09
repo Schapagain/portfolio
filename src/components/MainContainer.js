@@ -32,7 +32,7 @@ export default function MainContainer() {
             scrollToContact={scrollToContact}
             Ref={homeRef} 
             className="h-screen z-50"/>
-            <AppNavbar 
+            {/* <AppNavbar 
             scrollToContact={scrollToContact}
             scrollToHome={scrollToHome}
             scrollToProjects={scrollToBlockByBlock}
@@ -57,7 +57,7 @@ export default function MainContainer() {
             <ContactCard 
             Ref={contactRef} 
             className="min-h-screen"
-            />
+            /> */}
         </div>
     )
 }
