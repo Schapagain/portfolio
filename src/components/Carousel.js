@@ -43,6 +43,7 @@ export default function Carousel({ items, className }) {
     <div className={className + " relative"}>
       {items.map((item, index) => (
         <div
+          key={index}
           style={{
             left: `${(index - current) * 200}%`,
           }}

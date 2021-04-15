@@ -24,6 +24,7 @@ const UnderlinedText = ({ className, text, link }) => {
       href={link || "#"}
       target="_blank"
       referrerPolicy="no-referrer"
+      rel="noreferrer"
     >
       <span className="relative hover:opacity-50 p-2">
         <span>{text}</span>
