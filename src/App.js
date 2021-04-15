@@ -1,14 +1,13 @@
-
-import { 
-  faCode, 
-  faCheckCircle, 
+import Landing from "./components/Landing";
+import {
+  faCode,
+  faCheckCircle,
   faMoneyCheckAlt,
   faMugHot,
   faCloudSunRain,
-} from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import MainContainer from './components/MainContainer';
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 library.add(
   faCode,
@@ -18,13 +17,15 @@ library.add(
   faLinkedin,
   faGithub,
   faCloudSunRain
-  );
+);
 
 function App() {
-    const mainClass = "w-full bg-theme-color min-w-max-md flex flex-col justify-between mx-auto"
+  const mainClass =
+    "w-full flex relative flex-col bg-turq justify-between mx-auto";
+
   return (
     <div className={mainClass}>
-        <MainContainer />
+      <Landing />
     </div>
   );
 }
