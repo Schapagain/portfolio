@@ -50,13 +50,23 @@ export default function Carousel({ items, className }) {
           className={slideClasses}
         >
           {index !== 0 && (
-            <span role="button" onClick={handlePrev} className={prevClasses}>
+            <span
+              role="button"
+              aria-label="previous"
+              onClick={handlePrev}
+              className={prevClasses}
+            >
               <AiOutlineDoubleLeft />
             </span>
           )}
           {item}
           {index !== items.length - 1 && (
-            <span role="button" onClick={handleNext} className={nextClasses}>
+            <span
+              role="button"
+              aria-label="next"
+              onClick={handleNext}
+              className={nextClasses}
+            >
               <AiOutlineDoubleRight />
             </span>
           )}
