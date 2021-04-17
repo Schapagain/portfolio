@@ -25,27 +25,27 @@ export default function Carousel({ items, className }) {
   const nextClasses = classNames(buttonClasses, "-right-16 bg-turq-right");
 
   const slideClasses = classNames(
-    "w-full h-full absolute top-0",
-    "transition-left duration-700 ease-in-out"
+    "md:w-8/12 mx-auto h-full absolute top-0",
+    "transition-left transform -translate-x-1/2 duration-700 ease-in-out"
   );
 
   const projectsLabelClasses = classNames(
-    "absolute p-1 uppercase text-3xl top-1/2 transform -translate-y-1/2",
+    "absolute p-1 uppercase text-3xl transform -translate-y-1/2",
     "transition duration-700 ease-in-out",
     {
       "opacity-100 bg-turq-left": current === 0,
-      "opacity-0": current > 0,
+      "opacity-0": current > 0 && current < items.length - 1,
       "opacity-100 bg-turq-right": current === items.length - 1,
     }
   );
 
   return (
-    <div className={className + " relative"}>
+    <div className={className + " flex w-full max-w-screen-2xl relative"}>
       {items.map((item, index) => (
         <div
           key={index}
           style={{
-            left: `${(index - current) * 200}%`,
+            left: `${(index - current) * 200 + 50}%`,
           }}
           className={slideClasses}
         >
@@ -64,12 +64,16 @@ export default function Carousel({ items, className }) {
 
           <span
             style={{
+              top:
+                current === 0 || current === items.length - 1
+                  ? "50%"
+                  : "10000%",
               left:
                 current === 0
                   ? "-3%"
                   : current === items.length - 1
                   ? "103%"
-                  : null,
+                  : "-1000%",
             }}
             className={projectsLabelClasses}
           >

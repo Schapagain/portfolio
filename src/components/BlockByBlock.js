@@ -58,40 +58,11 @@ const WebSite = () => {
   return <Landing />;
 };
 
-const BlockByBlock = ({ className, Ref, scrollUp, scrollDown }) => {
+const BlockByBlock = ({ className }) => {
   const mainClass = classNames(className);
-  const buttonClass = "animate-bounce text-5xl hover:text-white mt-5";
   return (
-    <div ref={Ref} className={mainClass}>
-      {scrollUp && (
-        <div className="flex md:mt-10 transform rotate-180 relative font-thin justify-center invisible md:visible">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollUp();
-            }}
-            className={buttonClass}
-            href="/#"
-          >
-            V
-          </a>
-        </div>
-      )}
+    <div className={mainClass}>
       <SlidingPanel mainContent={<WebSite />} hiddenContent={<Description />} />
-      {scrollDown && (
-        <div className="flex mb-10 relative font-thin justify-center invisible md:visible">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollDown();
-            }}
-            className={buttonClass}
-            href="/#"
-          >
-            V
-          </a>
-        </div>
-      )}
     </div>
   );
 };

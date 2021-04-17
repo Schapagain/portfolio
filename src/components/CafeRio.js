@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
-import { SiRedux, SiJsonwebtokens } from "react-icons/si";
+import { SiRedux, SiJsonwebtokens, SiCoffeescript } from "react-icons/si";
 import { GiCheckMark } from "react-icons/gi";
 import { DiNodejsSmall, DiMongodb } from "react-icons/di";
 import SlidingPanel from "./SlidingPanel";
@@ -18,7 +17,7 @@ const Description = () => {
         >
           Cafe Rio
         </a>
-        <FontAwesomeIcon icon="mug-hot" className="ml-1" />
+        <SiCoffeescript className="ml-1 inline" />
       </p>
       <p className="mt-3 mb-3">
         This is a web application we built for an online hackathon. The idea was
@@ -58,40 +57,11 @@ const Website = () => {
   return <Landing />;
 };
 
-const CafeRio = ({ className, Ref, scrollUp, scrollDown }) => {
-  const buttonClass = "animate-bounce text-5xl hover:text-black mt-5";
+const CafeRio = ({ className }) => {
   const mainClass = classNames(className, "text-white");
   return (
-    <div ref={Ref} className={mainClass}>
-      {scrollUp && (
-        <div className="flex md:mt-10 transform rotate-180 relative font-thin justify-center invisible md:visible">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollUp();
-            }}
-            className={buttonClass}
-            href="/#"
-          >
-            V
-          </a>
-        </div>
-      )}
+    <div className={mainClass}>
       <SlidingPanel mainContent={<Website />} hiddenContent={<Description />} />
-      {scrollDown && (
-        <div className="flex mb-10 relative font-thin justify-center invisible md:visible">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollDown();
-            }}
-            className={buttonClass}
-            href="/#"
-          >
-            V
-          </a>
-        </div>
-      )}
     </div>
   );
 };

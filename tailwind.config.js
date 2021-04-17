@@ -7,11 +7,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        // 'library':"url('images/libraryImage.jpg')",
-        // 'night-sky':"url('images/nightSky.jpg')",
-        cafeteria: "url('images/cafeteria.jpg')", // Photo by Julia Sakelli from Pexels
+        "npl-homepage": "url('images/npl.jpg')",
         "coffee-on-desk": "url('images/coffeeOnDesk.jpg')", // Photo by Jason Villanueva from Pexels
-        calendars: "url('images/calendars.jpg')", // Photo by Olya Kobruseva from Pexels
+        "calendar-on-bed": "url('images/calendars.jpg')", // Photo by Olya Kobruseva from Pexels
         turq: "linear-gradient(to right, #136a8a, #267871)",
         hersheys: "linear-gradient(to right, #1e130c, #9a8478)",
         "between-the-clouds": "linear-gradient(to right, #73c8a9, #373b44)",

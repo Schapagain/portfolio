@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import CafeRio from "./CafeRio";
 import BlockByBlock from "./BlockByBlock";
+import NepalPictureLibrary from "./NepalPictureLibrary";
 import Carousel from "./Carousel";
 
 const UnderlinedText = ({ className, text, link }) => {
@@ -38,13 +39,13 @@ const UnderlinedText = ({ className, text, link }) => {
 const Landing = ({ className }) => {
   const mainClass = classNames(
     className,
-    "text-white flex mx-auto items-center text-center flex-col",
-    "h-screen w-full max-w-screen-2xl overflow-hidden p-10"
+    "text-white flex mx-auto items-center flex-col",
+    "h-screen w-full overflow-hidden p-10"
   );
   const headingClass = "text-3xl mb-2";
   const introClass = "text-lg 2xl:text-xl";
   const mainTextClass =
-    "flex text-md z-30 flex-col w-full h-2/6 md:w-1/2 p-5 justify-center";
+    "flex text-md z-30 flex-col text-center w-full h-2/6 md:w-1/2 p-5 justify-center";
 
   const projectsClass = classNames(
     "w-full h-full flex flex-col z-40 justify-between"
@@ -71,10 +72,12 @@ const Landing = ({ className }) => {
       </div>
 
       <Carousel
-        className="md:w-9/12 h-4/6"
+        className="w-full h-4/6"
         items={[
-          <CafeRio key="cafe-rio" className={projectsClass} />,
-          <BlockByBlock key="block-by-block" className={projectsClass} />,
+          <CafeRio className={projectsClass} />,
+          <NepalPictureLibrary className={projectsClass} />,
+
+          <BlockByBlock className={projectsClass} />,
         ]}
       />
     </main>
