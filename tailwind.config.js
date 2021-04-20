@@ -6,6 +6,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        architect: ["Architects Daughter", "cursive"],
+        "fira-mono": ["Fira Mono", "monospace"],
+      },
       backgroundImage: (theme) => ({
         "npl-homepage": "url('images/npl.jpg')",
         "coffee-on-desk": "url('images/coffeeOnDesk.jpg')", // Photo by Jason Villanueva from Pexels
@@ -17,6 +21,14 @@ module.exports = {
         "coffee-gradient": "linear-gradient(to top right, #a24208, #ffc7a6)",
       }),
       keyframes: {
+        "fade-in": {
+          to: {
+            opacity: "1",
+          },
+          from: {
+            opacity: "0",
+          },
+        },
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
           "50%": { transform: "rotate(3deg)" },
@@ -24,6 +36,7 @@ module.exports = {
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+        "fade-in": "fade-in 500ms",
       },
     },
     screens: {

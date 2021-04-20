@@ -3,6 +3,7 @@ import CafeRio from "./CafeRio";
 import BlockByBlock from "./BlockByBlock";
 import NepalPictureLibrary from "./NepalPictureLibrary";
 import Carousel from "./Carousel";
+import Line from "./Line";
 
 const UnderlinedText = ({ className, text, link }) => {
   const lineClasses = classNames(
@@ -42,8 +43,8 @@ const Landing = ({ className }) => {
     "text-white flex mx-auto items-center flex-col",
     "h-screen w-full overflow-hidden p-10"
   );
-  const headingClass = "text-3xl mb-2";
-  const introClass = "text-lg 2xl:text-xl";
+  const headingClass = "text-3xl font-fira-mono mb-2";
+  const introClass = "text-xl mt-3 font-fira-mono 2xl:text-xl";
   const mainTextClass =
     "flex text-md z-30 flex-col text-center w-full h-2/6 md:w-1/2 p-5 justify-center";
 
@@ -55,13 +56,14 @@ const Landing = ({ className }) => {
     <main className={mainClass}>
       <div className={mainTextClass}>
         <h1 className={headingClass}>Hi there. I am Sandesh.</h1>
+        <Line bg="white place-self-center" />
         <div className={introClass}>
           <p>I love building stuff for the web.</p>
           <p>
             Please check out my
             {
               <UnderlinedText
-                className="mx-1 text-3xl my-3 inline-block"
+                className="mx-1 text-3xl mb-3 inline-block"
                 text="github"
                 link="https://www.github.com/Schapagain/"
               />
