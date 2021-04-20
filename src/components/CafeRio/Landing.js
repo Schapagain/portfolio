@@ -1,6 +1,5 @@
 import NavBar from "./NavBar";
 import Button from "../Button";
-import Overlay from "../Overlay";
 
 const webLink = "https://cafe-rio.netlify.app/";
 const IntroText = () => {
@@ -18,7 +17,6 @@ const IntroText = () => {
 const Landing = () => {
   return (
     <div className="relative rounded-xl w-full h-full p-4 bg-cover bg-coffee-on-desk justify-between flex flex-col">
-      <Overlay color="black" opacity="20" />
       <NavBar className="z-50" webLink={webLink} />
       <div className="md:flex-row flex flex-col h-2/3 my-auto justify-center">
         <div className="flex my-auto m-3 w-full lg:w-1/2 flex-col">

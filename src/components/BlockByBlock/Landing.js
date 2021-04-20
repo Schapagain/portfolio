@@ -4,7 +4,6 @@ import { RiRepeatOneLine } from "react-icons/ri";
 import CalendarIcon from "./CalendarIcon";
 import { BsArrowUpDown, BsArrowDown } from "react-icons/bs";
 import Button from "../Button";
-import Overlay from "../Overlay";
 
 const webLink = "https://block-by-block.netlify.app/";
 const IntroText = () => {
@@ -24,7 +23,6 @@ const Landing = () => {
 
   return (
     <div className="rounded-xl relative w-full h-full p-4 bg-cover bg-calendar-on-bed justify-between flex flex-col">
-      <Overlay color="white" opacity="40" />
       <NavBar className="z-50" webLink={webLink} />
       <div className="md:flex-row w-full flex z-50 flex-col h-2/3 my-auto justify-center">
         <div className="flex my-auto m-3 w-full lg:w-1/2 flex-col">
