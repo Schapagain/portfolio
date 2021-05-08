@@ -77,7 +77,6 @@ const Landing = ({ className }) => {
         className="w-full h-4/6"
         items={[
           <CafeRio className={projectsClass} />,
-          <NepalPictureLibrary className={projectsClass} />,
 
           <BlockByBlock className={projectsClass} />,
         ]}
