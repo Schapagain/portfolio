@@ -56,7 +56,7 @@ export default function Navigation({ type, tooltip = "top" }) {
   });
 
   const ribbonClasses = classNames({
-    "transition-transform duration-500 -translate-x-16 bg-[#309D9A] p-1 rounded-l-xl": true,
+    "transition-transform duration-500 -translate-x-14 bg-[#309D9A] p-1 rounded-l-xl": true,
   });
 
   const routeMatches = useMatches();
@@ -92,7 +92,7 @@ export default function Navigation({ type, tooltip = "top" }) {
           aria-label="Open navigation menu"
         >
           <RiMenuFoldFill
-            className="mx-2 inline w-10 h-10"
+            className="mx-2 inline w-8 h-8 2xl:w-10 2xl:h-10"
             aria-hidden="true"
           />
         </button>
@@ -104,7 +104,10 @@ export default function Navigation({ type, tooltip = "top" }) {
             <li key={props.link} className="relative" aria-label={props.title}>
               <Link to={props.link} aria-label={props.title}>
                 <Tooltip text={props.title} location={tooltip}>
-                  <Icon className="mx-2 inline w-10 h-10" aria-hidden="true" />
+                  <Icon
+                    className="mx-2 inline w-8 h-8 2xl:w-10 2xl:h-10"
+                    aria-hidden="true"
+                  />
                 </Tooltip>
               </Link>
             </li>
@@ -117,7 +120,10 @@ export default function Navigation({ type, tooltip = "top" }) {
                 aria-label={props.title}
               >
                 <Tooltip text={props.title} location={tooltip}>
-                  <Icon className="mx-2 inline w-10 h-10" aria-hidden="true" />
+                  <Icon
+                    className="mx-2 inline w-8 h-8 2xl:w-10 2xl:h-10"
+                    aria-hidden="true"
+                  />
                 </Tooltip>
               </a>
             </li>
