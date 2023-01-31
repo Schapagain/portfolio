@@ -1,14 +1,20 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  content: ["./app/**/*.{js,ts,jsx,tsx}"],
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
+      minHeight: (theme) => ({
+        0: "0px",
+        full: "100%",
+        screen: "100vh",
+        ...theme("spacing"),
+      }),
       fontFamily: {
         architect: ["Architects Daughter", "cursive"],
-        "fira-mono": ["Fira Mono", "monospace"],
+        "fira-mono": ["Fira\\ Mono", "monospace"],
       },
       backgroundImage: (theme) => ({
         "npl-homepage": "url('images/npl.jpg')",
@@ -49,10 +55,8 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
       black: colors.black,
-      white: colors.white,
-      gray: colors.coolGray,
+      white: "#fff",
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
@@ -65,7 +69,10 @@ module.exports = {
       kabul: "#6D4B43",
       "fuchsia-blue": "#7c4ccb",
       "turq-left": "#156C87",
+      "turq-middle": "#1E727C",
       "turq-right": "#247675",
+      primary: "#276978",
+      "heading-primary": "#C5C5C5",
     },
     spacing: {
       px: "1px",
@@ -173,12 +180,9 @@ module.exports = {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-      md:
-        "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-      lg:
-        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-      xl:
-        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
@@ -264,6 +268,8 @@ module.exports = {
       "7xl": ["4.5rem", { lineHeight: "1" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
+      title: ["2.25rem", { lineHeight: "2.5rem" }],
+      subTitle: ["1.5rem", { lineHeight: "2rem" }],
     },
     fontWeight: {
       thin: "100",
@@ -523,6 +529,7 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       prose: "65ch",
+      "underline-max-width": "300px",
       ...breakpoints(theme("screens")),
     }),
     minHeight: {
@@ -713,6 +720,7 @@ module.exports = {
       shadow: "box-shadow",
       transform: "transform",
       left: "left",
+      width: "width, max-width",
     },
     transitionTimingFunction: {
       DEFAULT: "cubic-bezier(0.4, 0, 0.2, 1)",
@@ -968,5 +976,8 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };
