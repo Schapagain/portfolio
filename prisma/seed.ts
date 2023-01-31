@@ -27,7 +27,6 @@ seed();
 function getBooks() {
   return [
     {
-      id: "1250153271",
       title: "A Wrinkle in Time (Time Quintet, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675044889/Portfolio/books/33574273_lnigvr.jpg",
@@ -40,7 +39,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0465028020",
       title: "The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675044910/Portfolio/books/96884_adggsh.jpg",
@@ -53,7 +51,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "",
       title:
         "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
       coverImage:
@@ -67,7 +64,6 @@ function getBooks() {
       dateRead: "2020/09/30",
     },
     {
-      id: "1838574883",
       title: "Around the World in Eighty Days",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675044923/Portfolio/books/58458241_feztoe.jpg",
@@ -80,7 +76,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "159463193",
       title: "The Kite Runner",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675044936/Portfolio/books/17165596_b0slo1.jpg",
@@ -93,7 +88,6 @@ function getBooks() {
       dateRead: "2022/12/24",
     },
     {
-      id: "059331817",
       title: "Klara and the Sun",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675044977/Portfolio/books/54120408_ovkcyl.jpg",
@@ -106,7 +100,6 @@ function getBooks() {
       dateRead: "2022/09/17",
     },
     {
-      id: "0440180295",
       title: "Slaughterhouse-Five",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045110/Portfolio/books/168646_pcxyoj.jpg",
@@ -119,7 +112,6 @@ function getBooks() {
       dateRead: "2021/06/20",
     },
     {
-      id: "",
       title: "Crime and Punishment",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675044664/Portfolio/books/33137711_hapovd.jpg",
@@ -132,7 +124,6 @@ function getBooks() {
       dateRead: "2021/11/03",
     },
     {
-      id: "0060850523",
       title: "Brave New World",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045041/Portfolio/books/5485_jrkwmf.jpg",
@@ -146,7 +137,6 @@ function getBooks() {
       dateRead: "2021/10/17",
     },
     {
-      id: "1101972084",
       title: "Exhalation",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045154/Portfolio/books/54357168_xm1xzx.jpg",
@@ -160,7 +150,6 @@ function getBooks() {
       dateRead: "2021/12/08",
     },
     {
-      id: "038549081",
       title: "The Handmaid's Tale (The Handmaid's Tale, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045035/Portfolio/books/55190484_bxopl4.jpg",
@@ -173,7 +162,6 @@ function getBooks() {
       dateRead: "2021/11/17",
     },
     {
-      id: "0345472322",
       title: "Mindset: The New Psychology of Success",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045049/Portfolio/books/1307582_lz6chw.jpg",
@@ -187,7 +175,6 @@ function getBooks() {
       dateRead: "2021/10/02",
     },
     {
-      id: "0307743659",
       title: "The Shining",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045116/Portfolio/books/43887232_o51ntf.jpg",
@@ -200,7 +187,6 @@ function getBooks() {
       dateRead: "2021/10/10",
     },
     {
-      id: "0671027034",
       title: "How to Win Friends & Influence People",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045058/Portfolio/books/875983_icc00p.jpg",
@@ -214,7 +200,6 @@ function getBooks() {
       dateRead: "2021/09/05",
     },
     {
-      id: "1501121960",
       title: "The Sun Also Rises",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045089/Portfolio/books/26195198_vte1br.jpg",
@@ -227,7 +212,6 @@ function getBooks() {
       dateRead: "2021/08/21",
     },
     {
-      id: "0593135202",
       title: "Project Hail Mary",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045097/Portfolio/books/54493401_pm7ukf.jpg",
@@ -241,7 +225,6 @@ function getBooks() {
       dateRead: "2021/07/10",
     },
     {
-      id: "1501160834",
       title: "Anxious People",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045104/Portfolio/books/57210321_b62g1y.jpg",
@@ -255,7 +238,6 @@ function getBooks() {
       dateRead: "2021/06/28",
     },
     {
-      id: "0375704027",
       title: "Norwegian Wood",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045121/Portfolio/books/11297_igesu2.jpg",
@@ -268,7 +250,6 @@ function getBooks() {
       dateRead: "2021/06/10",
     },
     {
-      id: "0450417395",
       title: "Misery",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045209/Portfolio/books/10614_nax7pg.jpg",
@@ -281,7 +262,6 @@ function getBooks() {
       dateRead: "2021/05/26",
     },
     {
-      id: "",
       title: "फिरफिरे [Phirphire]",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045127/Portfolio/books/28681432_b6bt2i.jpg",
@@ -294,7 +274,6 @@ function getBooks() {
       dateRead: "2021/05/19",
     },
     {
-      id: "0473545500",
       title: "Optionality: How to Survive and Thrive in a Volatile World",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045142/Portfolio/books/55738971_aor31b.jpg",
@@ -307,7 +286,6 @@ function getBooks() {
       dateRead: "2021/02/01",
     },
     {
-      id: "0735214484",
       title: "Range: Why Generalists Triumph in a Specialized World",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045132/Portfolio/books/41795733_in1djx.jpg",
@@ -320,7 +298,6 @@ function getBooks() {
       dateRead: "2021/01/30",
     },
     {
-      id: "0066620996",
       title:
         "Good to Great: Why Some Companies Make the Leap... and Others Don't",
       coverImage:
@@ -334,7 +311,6 @@ function getBooks() {
       dateRead: "2021/01/15",
     },
     {
-      id: "",
       title: "The Lion, the Witch and the Wardrobe (Chronicles of Narnia, #2)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045137/Portfolio/books/56131899_h68kwn.jpg",
@@ -347,7 +323,6 @@ function getBooks() {
       dateRead: "2020/12/25",
     },
     {
-      id: "0316175668",
       title: "The Snow Child",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045148/Portfolio/books/13528343_vvzit9.jpg",
@@ -360,7 +335,6 @@ function getBooks() {
       dateRead: "2020/12/17",
     },
     {
-      id: "0375424040",
       title: "The Drunkard's Walk: How Randomness Rules Our Lives",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045573/Portfolio/books/2272880_vldhno.jpg",
@@ -373,7 +347,6 @@ function getBooks() {
       dateRead: "2019/07/30",
     },
     {
-      id: "0316769177",
       title: "The Catcher in the Rye",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045198/Portfolio/books/5107_gcztuy.jpg",
@@ -386,7 +359,6 @@ function getBooks() {
       dateRead: "2020/12/12",
     },
     {
-      id: "1626866074",
       title: "Alice's Adventures in Wonderland and Through the Looking-Glass",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045204/Portfolio/books/26113818_qzzbkz.jpg",
@@ -399,7 +371,6 @@ function getBooks() {
       dateRead: "2020/12/09",
     },
     {
-      id: "",
       title: "Never Let Me Go",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045307/Portfolio/books/6334_npwbba.jpg",
@@ -412,7 +383,6 @@ function getBooks() {
       dateRead: "2018/02/18",
     },
     {
-      id: "0679720227",
       title: "The Fall",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045200/Portfolio/books/11991_qtmume.jpg",
@@ -425,7 +395,6 @@ function getBooks() {
       dateRead: "2020/12/03",
     },
     {
-      id: "0140177396",
       title: "Of Mice and Men",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045202/Portfolio/books/50244003_kbiku5.jpg",
@@ -438,7 +407,6 @@ function getBooks() {
       dateRead: "2020/12/01",
     },
     {
-      id: "",
       title: "The Midnight Library",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045207/Portfolio/books/53568397_a3ozrp.jpg",
@@ -451,7 +419,6 @@ function getBooks() {
       dateRead: "2020/11/29",
     },
     {
-      id: "",
       title:
         "Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones",
       coverImage:
@@ -465,7 +432,6 @@ function getBooks() {
       dateRead: "2020/08/13",
     },
     {
-      id: "1400069289",
       title: "The Power of Habit: Why We Do What We Do in Life and Business",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045303/Portfolio/books/12609433_wwrbwk.jpg",
@@ -478,7 +444,6 @@ function getBooks() {
       dateRead: "2020/08/27",
     },
     {
-      id: "",
       title:
         "The Compound Effect: Jumpstart Your Income, Your Life, Your Success",
       coverImage:
@@ -492,7 +457,6 @@ function getBooks() {
       dateRead: "2020/10/20",
     },
     {
-      id: "",
       title:
         "The 4 Hour Workweek, Expanded And Updated: Expanded And Updated, With Over 100 New Pages Of Cutting Edge Content",
       coverImage:
@@ -506,7 +470,6 @@ function getBooks() {
       dateRead: "2020/11/26",
     },
     {
-      id: "",
       title:
         "Rich Dad Poor Dad: What The Rich Teach Their Kids About Money - That The Poor And Middle Class Do Not!",
       coverImage:
@@ -520,7 +483,6 @@ function getBooks() {
       dateRead: "2020/11/05",
     },
     {
-      id: "0393355942",
       title: "Fight Club",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045289/Portfolio/books/36236124_wicljp.jpg",
@@ -533,7 +495,6 @@ function getBooks() {
       dateRead: "2020/11/15",
     },
     {
-      id: "",
       title: "The Book Thief",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045305/Portfolio/books/1039461_if46zu.jpg",
@@ -546,7 +507,6 @@ function getBooks() {
       dateRead: "2020/10/16",
     },
     {
-      id: "0226458083",
       title: "The Structure of Scientific Revolutions",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045294/Portfolio/books/61539_jicct4.jpg",
@@ -559,7 +519,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "1559702028",
       title: "Auschwitz: A Doctor's Eyewitness Account",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045296/Portfolio/books/315578_lmfnht.jpg",
@@ -572,7 +531,6 @@ function getBooks() {
       dateRead: "2020/09/13",
     },
     {
-      id: "",
       title: "The Diary of a Young Girl",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045298/Portfolio/books/48855_fzmquh.jpg",
@@ -586,7 +544,6 @@ function getBooks() {
       dateRead: "2020/09/02",
     },
     {
-      id: "",
       title: "The Sea of Monsters (Percy Jackson and the Olympians, #2)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045453/Portfolio/books/44187_ucl18l.jpg",
@@ -599,7 +556,6 @@ function getBooks() {
       dateRead: "2020/08/30",
     },
     {
-      id: "1400079276",
       title: "Kafka on the Shore",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045455/Portfolio/books/4929_oexhzs.jpg",
@@ -612,7 +568,6 @@ function getBooks() {
       dateRead: "2020/07/19",
     },
     {
-      id: "1250301696",
       title: "The Silent Patient",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045458/Portfolio/books/40097951_h2jehe.png",
@@ -625,7 +580,6 @@ function getBooks() {
       dateRead: "2020/07/25",
     },
     {
-      id: "",
       title: "1984",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045459/Portfolio/books/46032155_rsuc3p.jpg",
@@ -638,7 +592,6 @@ function getBooks() {
       dateRead: "2020/08/07",
     },
     {
-      id: "",
       title: "Fahrenheit 451",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045461/Portfolio/books/13079982_rkzlj0.jpg",
@@ -651,7 +604,6 @@ function getBooks() {
       dateRead: "2020/08/11",
     },
     {
-      id: "073522112",
       title: "A Stranger in the House",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045310/Portfolio/books/33984056_cugpb5.jpg",
@@ -664,7 +616,6 @@ function getBooks() {
       dateRead: "2020/08/15",
     },
     {
-      id: "0451526341",
       title: "Animal Farm",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045301/Portfolio/books/170448_aodt7q.jpg",
@@ -677,7 +628,6 @@ function getBooks() {
       dateRead: "2020/08/25",
     },
     {
-      id: "055338256",
       title: "I, Robot",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045449/Portfolio/books/50881206_w2p7oz.jpg",
@@ -690,7 +640,6 @@ function getBooks() {
       dateRead: "2020/08/27",
     },
     {
-      id: "",
       title: "The Institute",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045441/Portfolio/books/43798285_aaqtce.jpg",
@@ -703,7 +652,6 @@ function getBooks() {
       dateRead: "2020/01/13",
     },
     {
-      id: "0786711647",
       title: "A Kiss Before Dying",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045727/Portfolio/books/12770_hdnsyw.jpg",
@@ -716,7 +664,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0061122416",
       title: "The Alchemist",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045725/Portfolio/books/865_lutdlz.jpg",
@@ -729,7 +676,6 @@ function getBooks() {
       dateRead: "2013/12/10",
     },
     {
-      id: "0060589280",
       title: "Eleven Minutes",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045734/Portfolio/books/1430_ti5zxl.jpg",
@@ -742,7 +688,6 @@ function getBooks() {
       dateRead: "2014/06/29",
     },
     {
-      id: "",
       title: "The Fault in Our Stars",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045728/Portfolio/books/11870085_cxpnbz.jpg",
@@ -755,7 +700,6 @@ function getBooks() {
       dateRead: "2014/08/05",
     },
     {
-      id: "8129118807",
       title: "Revolution 2020: Love, Corruption, Ambition",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045732/Portfolio/books/12615008_hstouh.jpg",
@@ -768,7 +712,6 @@ function getBooks() {
       dateRead: "2014/09/13",
     },
     {
-      id: "",
       title: "The 3 Mistakes of My Life",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045636/Portfolio/books/3320520_kbg2xi.jpg",
@@ -781,7 +724,6 @@ function getBooks() {
       dateRead: "2014/10/13",
     },
     {
-      id: "0751539252",
       title: "The Choice",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045640/Portfolio/books/6218829_byscbg.jpg",
@@ -794,7 +736,6 @@ function getBooks() {
       dateRead: "2014/12/10",
     },
     {
-      id: "009952533",
       title: "Worst Case (Michael Bennett #3)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045646/Portfolio/books/7934007_w14qzs.jpg",
@@ -807,7 +748,6 @@ function getBooks() {
       dateRead: "2015/02/09",
     },
     {
-      id: "0141328290",
       title: "Thirteen Reasons Why",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045659/Portfolio/books/6500026_omvxvn.jpg",
@@ -820,7 +760,6 @@ function getBooks() {
       dateRead: "2015/10/19",
     },
     {
-      id: "0099572834",
       title: "The Curious Incident of the Dog in the Night-Time",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045665/Portfolio/books/15845726_q4rjqb.jpg",
@@ -833,7 +772,6 @@ function getBooks() {
       dateRead: "2016/01/07",
     },
     {
-      id: "0151009988",
       title: "Mrs. Dalloway",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045669/Portfolio/books/14942_fkxhnh.jpg",
@@ -846,7 +784,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0465075681",
       title:
         "The Theoretical Minimum: What You Need to Know to Start Doing Physics",
       coverImage:
@@ -860,7 +797,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0786868449",
       title: "Sync: The Emerging Science of Spontaneous Order",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045561/Portfolio/books/354421_uaiki9.jpg",
@@ -873,7 +809,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0553820249",
       title: "Shutter Island",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045568/Portfolio/books/7279319_jsq6w5.jpg",
@@ -886,7 +821,6 @@ function getBooks() {
       dateRead: "2019/08/19",
     },
     {
-      id: "",
       title: "Things Fall Apart (The African Trilogy, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045444/Portfolio/books/42402467_dehooj.jpg",
@@ -899,7 +833,6 @@ function getBooks() {
       dateRead: "2020/02/24",
     },
     {
-      id: "1416524797",
       title: "Angels & Demons (Robert Langdon, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045720/Portfolio/books/960_ob5vv4.jpg",
@@ -912,7 +845,6 @@ function getBooks() {
       dateRead: "2014/07/20",
     },
     {
-      id: "0385732554",
       title: "The Giver (The Giver, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045451/Portfolio/books/3636_qotiiz.jpg",
@@ -925,7 +857,6 @@ function getBooks() {
       dateRead: "2014/09/01",
     },
     {
-      id: "0385732562",
       title: "Gathering Blue (The Giver, #2)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045721/Portfolio/books/12936_cytr1l.jpg",
@@ -938,7 +869,6 @@ function getBooks() {
       dateRead: "2014/09/18",
     },
     {
-      id: "0385732538",
       title: "Messenger (The Giver, #3)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045723/Portfolio/books/12930_pp3xwh.jpg",
@@ -951,7 +881,6 @@ function getBooks() {
       dateRead: "2015/01/20",
     },
     {
-      id: "0007442912",
       title: "Insurgent (Divergent, #2)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045642/Portfolio/books/11735983_b9yp6u.jpg",
@@ -964,7 +893,6 @@ function getBooks() {
       dateRead: "2015/01/30",
     },
     {
-      id: "0857389955",
       title: "The Girl with the Dragon Tattoo (Millennium, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045658/Portfolio/books/13336530_se9zo1.jpg",
@@ -977,7 +905,6 @@ function getBooks() {
       dateRead: "2015/10/18",
     },
     {
-      id: "9381529612",
       title: "Lord of the Flies",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045661/Portfolio/books/23203971_zng8od.jpg",
@@ -990,7 +917,6 @@ function getBooks() {
       dateRead: "2015/12/24",
     },
     {
-      id: "",
       title: "Flowers for Algernon",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045436/Portfolio/books/36576608_eg7cj7.jpg",
@@ -1003,7 +929,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0307593312",
       title: "1Q84 (1Q84, #1-3)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045437/Portfolio/books/10357575_a4tc2a.jpg",
@@ -1016,7 +941,6 @@ function getBooks() {
       dateRead: "2019/12/05",
     },
     {
-      id: "0061148512",
       title: "The Bell Jar",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045308/Portfolio/books/24006996_tvmcxg.jpg",
@@ -1029,7 +953,6 @@ function getBooks() {
       dateRead: "2020/08/20",
     },
     {
-      id: "",
       title: "To Kill a Mockingbird",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045634/Portfolio/books/2657_uhfy6i.jpg",
@@ -1042,7 +965,6 @@ function getBooks() {
       dateRead: "2014/09/27",
     },
     {
-      id: "",
       title: "The Green Mile",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045564/Portfolio/books/978711_yac5kj.jpg",
@@ -1055,7 +977,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "",
       title: "The Order of Time",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045442/Portfolio/books/41150906_wik6dy.jpg",
@@ -1068,7 +989,6 @@ function getBooks() {
       dateRead: "2020/02/07",
     },
     {
-      id: "148144963",
       title: "We Are the Ants",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045446/Portfolio/books/23677341_gw7een.jpg",
@@ -1081,7 +1001,6 @@ function getBooks() {
       dateRead: "2020/06/26",
     },
     {
-      id: "",
       title: "Metamorphosis",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045559/Portfolio/books/28225434_yplmf7.jpg",
@@ -1094,7 +1013,6 @@ function getBooks() {
       dateRead: "2019/09/04",
     },
     {
-      id: "",
       title: "The Stranger",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045577/Portfolio/books/13480960_dcqno0.jpg",
@@ -1107,7 +1025,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "0811201902",
       title: "The Wall and Other Stories",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045570/Portfolio/books/237827_w8k4k3.jpg",
@@ -1120,7 +1037,6 @@ function getBooks() {
       dateRead: "2019/09/03",
     },
     {
-      id: "0593068653",
       title: "Erwin Schrödinger and the Quantum Revolution",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045654/Portfolio/books/13734362_zekrhe.jpg",
@@ -1133,7 +1049,6 @@ function getBooks() {
       dateRead: "2015/05/01",
     },
     {
-      id: "0345331354",
       title: "Cosmos",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045656/Portfolio/books/370789_lopd5f.jpg",
@@ -1146,7 +1061,6 @@ function getBooks() {
       dateRead: "2015/05/27",
     },
     {
-      id: "0691164096",
       title: "QED: The Strange Theory of Light and Matter",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045671/Portfolio/books/21981723_cdg2yd.jpg",
@@ -1159,7 +1073,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "009917331",
       title: "Surely You're Joking, Mr. Feynman!",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045575/Portfolio/books/17364_cbrswi.jpg",
@@ -1172,7 +1085,6 @@ function getBooks() {
       dateRead: "2019/06/27",
     },
     {
-      id: "",
       title:
         "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
       coverImage:
@@ -1186,7 +1098,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "",
       title:
         "The Restaurant at the End of the Universe (Hitchhiker's Guide to the Galaxy, #2)",
       coverImage:
@@ -1200,7 +1111,6 @@ function getBooks() {
       dateRead: "2020/01/17",
     },
     {
-      id: "1408834979",
       title: "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045644/Portfolio/books/18193751_bzibzy.jpg",
@@ -1213,7 +1123,6 @@ function getBooks() {
       dateRead: "2015/02/12",
     },
     {
-      id: "1408834995",
       title: "Harry Potter and the Goblet of Fire (Harry Potter, #4)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045647/Portfolio/books/18245256_ct19mm.jpg",
@@ -1226,7 +1135,6 @@ function getBooks() {
       dateRead: "2015/03/06",
     },
     {
-      id: "",
       title: "The Fellowship of the Ring (The Lord of the Rings, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045663/Portfolio/books/899777_gmyhdb.jpg",
@@ -1239,7 +1147,6 @@ function getBooks() {
       dateRead: "2016/05/26",
     },
     {
-      id: "1408835002",
       title: "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045649/Portfolio/books/18271937_myjdrk.jpg",
@@ -1252,7 +1159,6 @@ function getBooks() {
       dateRead: "2015/03/20",
     },
     {
-      id: "1408835010",
       title: "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045650/Portfolio/books/18296481_ucyi2t.jpg",
@@ -1265,7 +1171,6 @@ function getBooks() {
       dateRead: "2015/03/26",
     },
     {
-      id: "1408835029",
       title: "Harry Potter and the Deathly Hallows (Harry Potter, #7)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045652/Portfolio/books/18457987_j4ddxe.jpg",
@@ -1278,7 +1183,6 @@ function getBooks() {
       dateRead: "2015/04/02",
     },
     {
-      id: "1417732474",
       title: "The Lightning Thief (Percy Jackson and the Olympians, #1)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045448/Portfolio/books/28191_fjgb8z.jpg",
@@ -1291,7 +1195,6 @@ function getBooks() {
       dateRead: "2020/05/31",
     },
     {
-      id: "",
       title: "The Little Prince",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045566/Portfolio/books/157993_pnz2zs.jpg",
@@ -1304,7 +1207,6 @@ function getBooks() {
       dateRead: "",
     },
     {
-      id: "1577656849",
       title: "The Count of Monte Cristo (Great Illustrated Classics)",
       coverImage:
         "https://res.cloudinary.com/skyimages/image/upload/v1675045638/Portfolio/books/440692_o9flv4.jpg",
