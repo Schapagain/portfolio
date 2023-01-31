@@ -49,14 +49,14 @@ export default function Navigation({ type, tooltip = "top" }) {
     },
   ];
   const navigationClasses = classNames({
-    "fixed top-5 transition-transform right-0 pr-2 bg-[#C6A11C] py-2 rounded-l-xl z-20 overflow-visible":
+    "fixed top-5 transition-transform right-0 pr-2 bg-[#309D9A] py-2 rounded-l-xl z-20 overflow-visible":
       type === "fixed",
     "translate-x-full": !menuVisible,
     "translate-x-0": menuVisible,
   });
 
   const ribbonClasses = classNames({
-    "transition-transform duration-500 -translate-x-16 bg-[#C6a11c] p-1 rounded-l-xl": true,
+    "transition-transform duration-500 -translate-x-16 bg-[#309D9A] p-1 rounded-l-xl": true,
   });
 
   const routeMatches = useMatches();
