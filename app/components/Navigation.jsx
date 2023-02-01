@@ -9,6 +9,8 @@ import {
   IoIosLaptop,
   IoMdHome,
 } from "react-icons/io";
+import { GiNotebook, GiForestCamp } from "react-icons/gi";
+
 import Tooltip from "~/components/Tooltip";
 import { useEffect } from "react";
 
@@ -30,10 +32,22 @@ export default function Navigation({ type, tooltip = "top" }) {
       linkType: "internal",
     },
     {
+      Icon: GiNotebook,
+      link: "https://medium.com/@zagzig",
+      title: "Read my medium articles",
+      linkType: "external",
+    },
+    {
       Icon: FaBookReader,
       link: "/library",
       title: "Personal library",
       linkType: "internal",
+    },
+    {
+      Icon: GiForestCamp,
+      link: "https://trailblazer.me/id/sandeshchapagain",
+      title: "Checkout Trailblazer profile",
+      linkType: "external",
     },
     {
       Icon: IoLogoGithub,
@@ -100,7 +114,8 @@ export default function Navigation({ type, tooltip = "top" }) {
 
       <ul className="flex relative text-white">
         {navItems.map(({ Icon, ...props }) =>
-          currentPath === props.link ? null : props.linkType == "internal" ? (
+          !props.link || currentPath === props.link ? null : props.linkType ==
+            "internal" ? (
             <li key={props.link} className="relative" aria-label={props.title}>
               <Link to={props.link} aria-label={props.title}>
                 <Tooltip text={props.title} location={tooltip}>
