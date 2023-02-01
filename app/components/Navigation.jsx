@@ -65,8 +65,8 @@ export default function Navigation({ type, tooltip = "top" }) {
   const navigationClasses = classNames({
     "fixed top-5 transition-transform right-0 pr-2 bg-navbar-bg py-2 rounded-l-xl z-20 overflow-visible":
       type === "fixed",
-    "translate-x-full": !menuVisible,
-    "translate-x-0": menuVisible,
+    "translate-x-full": type == "fixed" && !menuVisible,
+    "translate-x-0": (type = "fixed" && menuVisible),
   });
 
   const ribbonClasses = classNames({
