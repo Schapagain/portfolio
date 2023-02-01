@@ -10,6 +10,7 @@ const description = {
   Icon: <TbBulb className="ml-1 inline" />,
   intro: "A very simple implementation for Bored API",
   link: "https://weekend-ideas.netlify.app/#",
+  githubLink: "https://github.com/Schapagain/weekend-ideas",
 };
 
 const WeekendIdeas = ({ className }) => {

@@ -11,6 +11,7 @@ const description = {
   intro:
     "This is a web application we built for an online hackathon. The idea was to help employees order food from their office cafeteria.",
   link: "https://cafe-rio.netlify.app/",
+  githubLink: "https://github.com/Schapagain/cafe-rio",
 };
 
 const CafeRio = ({ className }) => {
