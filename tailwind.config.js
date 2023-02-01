@@ -73,6 +73,7 @@ module.exports = {
       "turq-right": "#247675",
       primary: "#276978",
       "heading-primary": "#C5C5C5",
+      "navbar-bg": "#309D9A",
     },
     spacing: {
       px: "1px",
