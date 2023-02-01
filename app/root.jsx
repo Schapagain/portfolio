@@ -5,6 +5,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
+  useLocation,
 } from "@remix-run/react";
 import styles from "./styles/app.css";
 
@@ -18,7 +20,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import Navigation from "./components/Navigation";
+import { json } from "@remix-run/node";
+import { useEffect } from "react";
+import { pageView } from "./utils/gtags.client";
 
 library.add(
   faCode,
@@ -43,7 +47,46 @@ export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
 
+// Load the GA tracking id from the .env
+export const loader = async () => {
+  return json({ gaTrackingId: process.env.GA_TRACKING_ID });
+};
+
+function AnalyticsScript({ trackingId }) {
+  return (
+    <>
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${trackingId}`}
+      ></script>
+      <script
+        async
+        id="gtag-init"
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${trackingId}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+        }}
+      />
+    </>
+  );
+}
+
 export default function App() {
+  const location = useLocation();
+  const { gaTrackingId } = useLoaderData();
+
+  useEffect(() => {
+    if (gaTrackingId?.length) {
+      pageView(location.pathname, gaTrackingId);
+    }
+  }, [location, gaTrackingId]);
+
   return (
     <html lang="en">
       <head>
@@ -51,6 +94,7 @@ export default function App() {
         <Links />
       </head>
       <body className="w-full max-w-screen-xl mx-auto min-h-screen flex flex-col justify-center items-center bg-turq text-white">
+        <AnalyticsScript trackingId={gaTrackingId} />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
