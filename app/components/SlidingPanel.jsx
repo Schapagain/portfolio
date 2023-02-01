@@ -53,9 +53,9 @@ export default function SlidingPanel({ hiddenContent, projectImage }) {
   );
 
   return (
-    <div className="relative z-10 flex flex-col lg:flex-row h-full justify-center px-5 sm:px-20 lg:px-0 my-5 items-center w-full m-auto">
+    <div className="relative z-10 flex flex-col lg:flex-row h-full justify-center my-5 items-center w-full m-auto">
       <animated.div style={mainContentProps} className={websiteClass}>
-        <div className="flex h-full rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl overflow-hidden">
+        <div className="flex h-full bg-[#BCB8B7] rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl overflow-hidden">
           <ProjectImage url={projectImage} />
         </div>
         <div
