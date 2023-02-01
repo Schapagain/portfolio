@@ -10,6 +10,7 @@ const description = {
   Icon: <BsCalendar className="ml-1 inline" />,
   intro:
     "This is a minimal full-stack application that allows users to track their daily habits. Users can mark calendars for a block of 30 days for each habit, and track their progress over time.",
+  githubLink: "https://github.com/Schapagain/habit-tracker",
 };
 
 const BlockByBlock = ({ className }) => {
