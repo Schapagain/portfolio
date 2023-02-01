@@ -36,7 +36,7 @@ export const meta = () => ({
   title: "Sandesh's Wall",
   description: `You've landed on a perfect place if you want to know more about Sandesh Chapagain. 
   Sandesh works as a software developer and is particularly interested in frontend engineering.
-  He has experience in developing custom full-stack applications, and also had dabble into the Salesforce and Adobe ecosystem to build applications`,
+  He has experience in developing custom full-stack applications, and also has dabbled into the Salesforce and Adobe ecosystems to build applications`,
   viewport: "width=device-width,initial-scale=1",
 });
 export function links() {
