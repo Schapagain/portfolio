@@ -53,9 +53,9 @@ export default function Library() {
     "others",
   ];
   return (
-    <div className="w-full flex flex-col relative px-5">
+    <div className="w-full flex flex-col relative px-5 pt-24 md:pt-32 lg:pt-40">
       <Navigation type="fixed" tooltip="bottom" />
-      <h1 className="text-center text-subTitle mt-24 md:mt-32 lg:mt-40">
+      <h1 className="text-center text-subTitle">
         A lot of my time is spent with books, and I enjoy reading anything and
         everything.
       </h1>
