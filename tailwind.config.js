@@ -74,6 +74,7 @@ module.exports = {
       primary: "#276978",
       "heading-primary": "#C5C5C5",
       "navbar-bg": "#309D9A",
+      "color-project-description": "#BCB8B7",
     },
     spacing: {
       px: "1px",
