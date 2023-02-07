@@ -5,7 +5,9 @@
     "app/components/Underline.jsx",
     "app/components/Home.jsx",
     "app/routes/index.jsx",
-    "app/routes/library.js"
+    "app/routes/library.js",
+    "app/components/Carousel.tsx",
+    "app/components/Projects.tsx"
   ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
