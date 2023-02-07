@@ -1,12 +1,43 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import classNames from "classnames";
 import { AiOutlineDoubleRight, AiOutlineDoubleLeft } from "react-icons/ai";
+import { ButtonHTMLAttributes } from "react";
 
-const getPrevIndex = (current, total) =>
+const PaginationDot = ({
+  page,
+  active,
+  ...props
+}: {
+  page: number;
+  active: boolean;
+} & ButtonHTMLAttributes<HTMLButtonElement>) => {
+  return (
+    <button
+      {...props}
+      aria-label={`go to slide ${page}`}
+      className={
+        "block mx-1 w-3 h-3 rounded-full " +
+        (active ? "bg-transparent border border-spring-rain" : "bg-spring-rain")
+      }
+    ></button>
+  );
+};
+
+const getPrevIndex = (current: number, total: number) =>
   current === 0 ? total - 1 : current - 1;
-const getNextIndex = (current, total) => (current + 1) % total;
+const getNextIndex = (current: number, total: number) => (current + 1) % total;
 
-export default function Carousel({ items, className, label = "projects" }) {
+export type Carousel = {
+  items: ReactNode[];
+  className: string;
+  label?: string;
+};
+
+export default function Carousel({
+  items,
+  className,
+  label = "projects",
+}: Carousel) {
   const [current, setCurrent] = useState(0);
 
   const handleNext = () => {
@@ -14,6 +45,11 @@ export default function Carousel({ items, className, label = "projects" }) {
   };
   const handlePrev = () => {
     setCurrent((current) => getPrevIndex(current, items.length));
+  };
+  const handlePagination = (page: number) => {
+    console.log("handling pagination");
+    if (page < 0 || page >= items.length || page === current) return;
+    setCurrent(page);
   };
 
   const buttonClasses = classNames(
@@ -41,7 +77,10 @@ export default function Carousel({ items, className, label = "projects" }) {
   );
 
   return (
-    <div className={className + " flex w-full max-w-screen-xl relative"}>
+    <div
+      data-active-item={current}
+      className={className + " carousel flex w-full max-w-screen-xl relative"}
+    >
       <div>
         {current !== 0 && (
           <span
@@ -79,14 +118,25 @@ export default function Carousel({ items, className, label = "projects" }) {
         >
           {label}
         </span>
+        <div className="absolute z-10 flex bottom-0 left-1/2 -translate-x-1/2 ">
+          {items.map((item, index) => (
+            <PaginationDot
+              key={"carousel-pagination-dot-" + index}
+              page={index}
+              active={index === current}
+              onClick={() => handlePagination(index)}
+            />
+          ))}
+        </div>
       </div>
       {items.map((item, index) => (
         <div
-          key={index}
+          key={"carousel-item-" + index}
           style={{
             left: `${(index - current) * 200 + 50}%`,
           }}
           className={slideClasses}
+          data-active={current === index}
         >
           {item}
         </div>
