@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMoreVertical } from "react-icons/fi";
 import classNames from "classnames";
 import { useSpring, animated, config } from "react-spring";
+import ProjectDescription from "./ProjectDescription";
 
 function ProjectImage({ url }) {
   return url ? (
@@ -11,14 +12,14 @@ function ProjectImage({ url }) {
       alt={`project website screenshot`}
     />
   ) : (
-    <div className="w-full h-full bg-blue-200 flex flex-col justify-center items-center bg-[#BCB8B7] text-calypso font-bold text-xl">
+    <div className="w-full h-full min-h-64 bg-blue-200 flex flex-col justify-center items-center bg-color-project-description text-calypso font-bold text-xl">
       <p className="text-7xl">404</p>
       <p>Project Preview Not Available</p>
     </div>
   );
 }
 
-export default function SlidingPanel({ hiddenContent, projectImage }) {
+export default function SlidingPanel({ details }) {
   const [panelVisible, setPanelVisible] = useState(false);
 
   const mainContentProps = useSpring({
@@ -55,8 +56,8 @@ export default function SlidingPanel({ hiddenContent, projectImage }) {
   return (
     <div className="relative z-10 flex flex-col lg:flex-row h-full justify-center my-5 items-center w-full m-auto">
       <animated.div style={mainContentProps} className={websiteClass}>
-        <div className="flex h-full bg-[#BCB8B7] rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl overflow-hidden">
-          <ProjectImage url={projectImage} />
+        <div className="flex h-full bg-color-project-description rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl overflow-hidden">
+          <ProjectImage url={details.projectImage} />
         </div>
         <div
           onClick={() => setPanelVisible(!panelVisible)}
@@ -69,7 +70,7 @@ export default function SlidingPanel({ hiddenContent, projectImage }) {
         </div>
       </animated.div>
       <animated.div style={hiddenContentProps} className={descriptionClass}>
-        {hiddenContent}
+        <ProjectDescription {...details} />
       </animated.div>
     </div>
   );
