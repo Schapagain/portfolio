@@ -93,7 +93,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="w-full max-w-screen-xl mx-auto min-h-screen flex flex-col justify-center items-center bg-turq text-white">
+      <body className="w-full max-w-screen-xl mx-auto min-h-screen flex flex-col bg-turq text-white">
         <AnalyticsScript trackingId={gaTrackingId} />
         <Outlet />
         <ScrollRestoration />
