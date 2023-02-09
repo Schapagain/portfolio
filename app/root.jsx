@@ -37,7 +37,7 @@ library.add(
 
 export const meta = () => ({
   charset: "utf-8",
-  title: "Sandesh's Wall",
+  title: "Sandesh Chapagain",
   description: `You've landed on a perfect place if you want to know more about Sandesh Chapagain. 
   Sandesh works as a software developer and is particularly interested in frontend engineering.
   He has experience in developing custom full-stack applications, and also has dabbled into the Salesforce and Adobe ecosystems to build applications`,
