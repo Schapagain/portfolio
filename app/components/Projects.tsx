@@ -55,12 +55,12 @@ export default function Projects() {
     {
       newSkills: ["Design"],
       upgradedSkills: ["React", "Integration"],
-      title: "I Am Bored",
+      title: "Bored I Am",
       intro: "A very simple implementation for Bored API",
-      link: "https://i-am-bored.netlify.app",
+      link: "https://bored-i-am.netlify.app",
       githubLink: "https://github.com/Schapagain/weekend-ideas",
       projectImage:
-        "https://res.cloudinary.com/skyimages/image/upload/v1675744306/Portfolio/i_am_bored_ygopuy.png",
+        "https://res.cloudinary.com/skyimages/image/upload/v1675912037/Portfolio/i-am-bored_wctoa9.png",
     },
   ];
 
