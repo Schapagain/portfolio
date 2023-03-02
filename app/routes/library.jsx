@@ -66,7 +66,7 @@ export default function Library() {
           books={books.filter((book) => {
             const tags = book.tags && book.tags.split(",");
             if (section === "others") {
-              return !tags || findCommonElements(sections, tags).length > 0;
+              return !tags || findCommonElements(sections, tags).length === 0;
             } else return tags && tags.includes(section);
           })}
         />
