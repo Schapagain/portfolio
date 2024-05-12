@@ -2,7 +2,7 @@
   node_bundler = "esbuild"
 
 [build]
-  command = "npm run build"
+  command = "npx prisma generate && npm run build"
   publish = "public"
 
 [dev]
