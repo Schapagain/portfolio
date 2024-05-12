@@ -6,7 +6,6 @@ import { RiMenuFoldFill } from "react-icons/ri";
 import {
   IoLogoLinkedin,
   IoLogoGithub,
-  IoIosLaptop,
   IoMdHome,
 } from "react-icons/io";
 import { GiNotebook, GiForestCamp } from "react-icons/gi";
@@ -26,12 +25,6 @@ export default function Navigation({ type, tooltip = "top" }) {
       linkType: "internal",
     },
     {
-      Icon: IoIosLaptop,
-      link: "/projects",
-      title: "My projects",
-      linkType: "internal",
-    },
-    {
       Icon: GiNotebook,
       link: "https://medium.com/@zagzig",
       title: "Read my medium articles",
@@ -40,7 +33,7 @@ export default function Navigation({ type, tooltip = "top" }) {
     {
       Icon: FaBookReader,
       link: "/library",
-      title: "Personal library",
+      title: "What do I read?",
       linkType: "internal",
     },
     {
@@ -52,7 +45,7 @@ export default function Navigation({ type, tooltip = "top" }) {
     {
       Icon: IoLogoGithub,
       link: "https://github.com/Schapagain",
-      title: "Checkout my Github",
+      title: "My Github",
       linkType: "external",
     },
     {
