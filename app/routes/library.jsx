@@ -47,6 +47,7 @@ export default function Library() {
   const sections = [
     "currently-reading",
     "favorites",
+    "philosophical",
     "funtasies",
     "1q84",
     "sciency",
