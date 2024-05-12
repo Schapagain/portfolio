@@ -34,7 +34,7 @@ function getBooks() {
       isbn: "",
       isbn13: "9780393634990",
       myRating: 0,
-      tags: "technology",
+      tags: "technology,currently-reading",
       myReview: "",
       dateRead: "",
     },
