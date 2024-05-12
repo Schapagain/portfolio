@@ -82,10 +82,12 @@ function Book(book) {
       title={book.title}
       className="py-5 px-3 max-w-sm flex flex-col items-center"
     >
-      <div className="w-28">
-        <CoverImage url={book.coverImage} title={book.title} />
-        <p className="text-xs text-center mt-1.5 line-clamp-2">{book.title}</p>
-      </div>
+      <a target="_blank" rel="noopener" href={`https://app.thestorygraph.com/browse?search_term=${book.isbn13 || book.isbn || ""}`}>
+        <div className="w-28">
+          <CoverImage url={book.coverImage} title={book.title} />
+          <p className="text-xs text-center mt-1.5 line-clamp-2">{book.title}</p>
+        </div>
+      </a>
     </div>
   );
 }
