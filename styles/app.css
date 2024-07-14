@@ -8,4 +8,73 @@
     font-family: "Maven Pro", system-ui, sans-serif;
     overflow-x: hidden;
   }
+
+  body {
+    background: #222;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+  }
+  
+  .main-content {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .moleskine-wrapper {
+    max-width: calc(100% / 5);
+    /* min-width: 10em; */
+  }
+  .book {
+    height: 275px;
+    width: 175px;
+    position: relative;
+    transition: .4s ease-in-out;
+    border-radius: 5px;
+    transform-origin: left center 0px;
+    display: inline-block;
+    margin: 30px;
+    perspective: 800px; 
+    transform: rotateZ(-1deg);
+  }
+  .book:hover {
+    transform: rotateZ(-5deg);
+  }
+  .book:hover .book-cover {
+    transform: rotateY(-90deg);
+    z-index: 999;
+    box-shadow: 20px 10px 50px rgba(0,0,0,0.2);
+  }
+  
+  .book-cover {
+    height: 275px;
+    width: 175px;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 10;
+    transition: .5s linear;
+    transform-style: preserve-3d;
+    transform-origin: left center 0px;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    transform: rotateY(-25deg);
+  }
+  
+  .book-page {
+    height: 100%;
+    width: 175px;
+    position: absolute;
+    background-color: #fbfae8;
+    padding: 15px;
+    color: #1e1e1e;
+    z-index: 0;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;  
+  }
 }
