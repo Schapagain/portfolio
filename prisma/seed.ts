@@ -1118,7 +1118,7 @@ function getBooks() {
       myRating: 4,
       tags: "favorites,philosophical",
       myReview: "",
-      dateRead: "",
+      dateRead: "2019/01/03",
     },
     {
       title: "The Wall and Other Stories",
