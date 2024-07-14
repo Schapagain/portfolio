@@ -16,6 +16,8 @@ export const loader = async () => {
         title: true,
         tags: true,
         coverImage: true,
+        myReview: true,
+        dateRead:true,
       },
     }),
   });
@@ -80,22 +82,19 @@ function Book(book) {
   return (
     <div
       title={book.title}
-      className="py-5 px-3 max-w-sm flex flex-col items-center"
+      className="max-w-sm flex flex-col items-center"
     >
       <a target="_blank" rel="noopener" href={`https://app.thestorygraph.com/browse?search_term=${book.isbn13 || book.isbn || ""}`}>
-        <div className="w-28">
-          <CoverImage url={book.coverImage} title={book.title} />
-          <p className="text-xs text-center mt-1.5 line-clamp-2">{book.title}</p>
+        <div className="book">
+          <div style={{backgroundImage:`url(${book.coverImage})`}} className="book-cover">
+          </div>
+          <div className="book-page text-xs xl:text-md">
+            {book.dateRead && <div className="whitespace-nowrap mb-2">Date Read: {new Date(book.dateRead).toLocaleDateString()}</div>}
+            {book.myReview || `This is my review of ${book.title}. It was a great read!`}
+            
+          </div>
         </div>
       </a>
-    </div>
-  );
-}
-
-function CoverImage({ url, title = "book" }) {
-  return (
-    <div className="aspect-h-3 aspect-w-2 overflow-hidden">
-      <img className="block w-full h-auto" src={url} alt={`${title} cover`} />
     </div>
   );
 }
