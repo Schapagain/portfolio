@@ -7,6 +7,9 @@ import path from "path";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  ssr: {
+    noExternal: ["react-icons"],
+  },
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "app"),
