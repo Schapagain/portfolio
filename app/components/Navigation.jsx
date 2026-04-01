@@ -3,12 +3,8 @@ import classNames from "classnames";
 import { useState } from "react";
 import { FaBookReader } from "react-icons/fa";
 import { RiMenuFoldFill } from "react-icons/ri";
-import {
-  IoLogoLinkedin,
-  IoLogoGithub,
-  IoMdHome,
-} from "react-icons/io";
-import { GiNotebook, GiForestCamp } from "react-icons/gi";
+import { IoLogoLinkedin, IoLogoGithub, IoMdHome } from "react-icons/io";
+import { GiNotebook } from "react-icons/gi";
 
 import Tooltip from "~/components/Tooltip";
 import { useEffect } from "react";
@@ -37,12 +33,6 @@ export default function Navigation({ type, tooltip = "top" }) {
       linkType: "internal",
     },
     {
-      Icon: GiForestCamp,
-      link: "https://trailblazer.me/id/sandeshchapagain",
-      title: "Checkout Trailblazer profile",
-      linkType: "external",
-    },
-    {
       Icon: IoLogoGithub,
       link: "https://github.com/Schapagain",
       title: "My Github",
@@ -58,8 +48,8 @@ export default function Navigation({ type, tooltip = "top" }) {
   const navigationClasses = classNames({
     "fixed top-5 transition-transform right-0 pr-2 bg-navbar-bg py-2 rounded-l-xl z-20 overflow-visible":
       type === "fixed",
-    "translate-x-full": type == "fixed" && !menuVisible,
-    "translate-x-0": (type = "fixed" && menuVisible),
+    "translate-x-full": type === "fixed" && !menuVisible,
+    "translate-x-0": type === "fixed" && menuVisible,
   });
 
   const ribbonClasses = classNames({
@@ -84,10 +74,12 @@ export default function Navigation({ type, tooltip = "top" }) {
   }, [menuVisible]);
 
   useEffect(() => {
-    window.onscroll = (e) => {
+    const handleScroll = () => {
       if (window.scrollY < 5) setMenuVisible(true);
       else setMenuVisible(false);
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -135,7 +127,7 @@ export default function Navigation({ type, tooltip = "top" }) {
                 </Tooltip>
               </a>
             </li>
-          )
+          ),
         )}
       </ul>
     </nav>
