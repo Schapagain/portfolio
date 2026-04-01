@@ -1,7 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 const db = new PrismaClient();
 
-function removeEmptyAttributes(obj) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function removeEmptyAttributes(obj: any) {
   try {
     return Object.fromEntries(
       Object.entries(obj).filter(([_, v]) => v != null && String(v).length > 0)

@@ -8,7 +8,7 @@ import {
   useLoaderData,
   useLocation,
 } from "@remix-run/react";
-import styles from "./styles/app.css";
+import styles from "./styles/app.css?url";
 
 /* Font awesome config --> */
 import {
@@ -35,14 +35,17 @@ library.add(
 );
 /* <-- Font awesome config */
 
-export const meta = () => ({
-  charset: "utf-8",
-  title: "Sandesh Chapagain",
-  description: `You've landed on a perfect place if you want to know more about Sandesh Chapagain. 
+export const meta = () => [
+  { charSet: "utf-8" },
+  { title: "Sandesh Chapagain" },
+  {
+    name: "description",
+    content: `You've landed on a perfect place if you want to know more about Sandesh Chapagain.
   Sandesh works as a software developer and is particularly interested in frontend engineering.
   He has experience in developing custom full-stack applications, and also has dabbled into the Salesforce and Adobe ecosystems to build applications`,
-  viewport: "width=device-width,initial-scale=1",
-});
+  },
+  { name: "viewport", content: "width=device-width,initial-scale=1" },
+];
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
