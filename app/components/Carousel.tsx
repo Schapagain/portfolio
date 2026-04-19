@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from "react";
 import classNames from "classnames";
 import { AiOutlineDoubleRight, AiOutlineDoubleLeft } from "react-icons/ai";
-import { ButtonHTMLAttributes } from "react";
+import type { ButtonHTMLAttributes } from "react";
 
 const PaginationDot = ({
   page,

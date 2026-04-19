@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from "react";
+import React from "react";
 
 export default function Underline({ className, ...props }) {
   const allClasses = "h-0.5 w-3/5 bg-white  block mb-2 " + (className || "");

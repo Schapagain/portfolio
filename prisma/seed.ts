@@ -5,7 +5,7 @@ const db = new PrismaClient();
 function removeEmptyAttributes(obj: any) {
   try {
     return Object.fromEntries(
-      Object.entries(obj).filter(([_, v]) => v != null && String(v).length > 0)
+      Object.entries(obj).filter(([_, v]) => v != null && String(v).length > 0),
     );
   } catch (e) {}
   return obj;
@@ -19,7 +19,7 @@ async function seed() {
         filteredBook.dateRead = new Date(filteredBook.dateRead);
       }
       return db.book.create({ data: filteredBook });
-    })
+    }),
   );
 }
 
@@ -27,51 +27,75 @@ seed();
 
 function getBooks() {
   return [
+    // {
+    //   title: "Do Androids Dream of Electric Sheep?",
+    //   coverImage:
+    //     "https://res.cloudinary.com/skyimages/image/upload/v1725307380/Portfolio/books/electric_sheep_bczmwp.jpg",
+    //   authors: "Philip K. Dick",
+    //   isbn: "",
+    //   isbn13: "9780345404473",
+    //   myRating: 0,
+    //   tags: "1q84,sciency,currently-reading",
+    //   myReview: "",
+    //   dateRead: "",
+    // },
+    // {
+    //   title: "The Bhagavad Gita",
+    //   coverImage:
+    //     "https://res.cloudinary.com/skyimages/image/upload/v1725307380/Portfolio/books/the_bhagavad_gita_ff1m6p.jpg",
+    //   authors: "Eknath Easwaran",
+    //   isbn: "",
+    //   isbn13: "9781586380199",
+    //   myRating: 0,
+    //   tags: "philosophical,currently-reading",
+    //   myReview: "",
+    //   dateRead: "",
+    // },
+    // {
+    //   title: "Meditations on First Philosophy",
+    //   coverImage:
+    //     "https://res.cloudinary.com/skyimages/image/upload/v1725307050/Portfolio/books/meditation_on_first_philosophy_c7kzok.jpg",
+    //   authors: "René Descartes, Donald A. Cress",
+    //   isbn: "0872201929",
+    //   isbn13: "",
+    //   myRating: 0,
+    //   tags: "philosophical,currently-reading",
+    //   myReview: "",
+    //   dateRead: "",
+    // },
+    // {
+    //   title: "The Yellow Pad: Making Better Decisions in an Uncertain World",
+    //   coverImage:
+    //     "https://res.cloudinary.com/skyimages/image/upload/v1725308589/Portfolio/books/the_yellow_pad_uhmnhd.jpg",
+    //   authors: "Robert E. Rubin",
+    //   isbn: "",
+    //   isbn13: "9780593491393",
+    //   myRating: 0,
+    //   tags: "business,currently-reading",
+    //   myReview: "",
+    //   dateRead: "",
+    // },
     {
-      title: "Do Androids Dream of Electric Sheep?",
+      title: "Can't Hurt Me: Master Your Mind and Defy the Odds",
       coverImage:
-        "https://res.cloudinary.com/skyimages/image/upload/v1725307380/Portfolio/books/electric_sheep_bczmwp.jpg",
-      authors: "Philip K. Dick",
+        "https://res.cloudinary.com/skyimages/image/upload/v1776628948/Portfolio/books/cant_hurt_me_yoozcz.webp",
+      authors: "David Goggins",
       isbn: "",
-      isbn13: "9780345404473",
+      isbn13: "9781544512273",
       myRating: 0,
-      tags: "1q84,sciency,currently-reading",
+      tags: "self-help,currently-reading",
       myReview: "",
       dateRead: "",
     },
     {
-      title: "The Bhagavad Gita",
+      title: "Antifragile: Things That Gain from Disorder",
       coverImage:
-        "https://res.cloudinary.com/skyimages/image/upload/v1725307380/Portfolio/books/the_bhagavad_gita_ff1m6p.jpg",
-      authors: "Eknath Easwaran",
+        "https://res.cloudinary.com/skyimages/image/upload/v1776628948/Portfolio/books/antifragile_irutxv.webp",
+      authors: "Nassim Nicholas Taleb",
       isbn: "",
-      isbn13: "9781586380199",
+      isbn13: "9780812979688",
       myRating: 0,
-      tags: "philosophical,currently-reading",
-      myReview: "",
-      dateRead: "",
-    },
-    {
-      title: "Meditations on First Philosophy",
-      coverImage:
-        "https://res.cloudinary.com/skyimages/image/upload/v1725307050/Portfolio/books/meditation_on_first_philosophy_c7kzok.jpg",
-      authors: "René Descartes, Donald A. Cress",
-      isbn: "0872201929",
-      isbn13: "",
-      myRating: 0,
-      tags: "philosophical,currently-reading",
-      myReview: "",
-      dateRead: "",
-    },
-    {
-      title: "The Yellow Pad: Making Better Decisions in an Uncertain World",
-      coverImage:
-        "https://res.cloudinary.com/skyimages/image/upload/v1725308589/Portfolio/books/the_yellow_pad_uhmnhd.jpg",
-      authors: "Robert E. Rubin",
-      isbn: "",
-      isbn13: "9780593491393",
-      myRating: 0,
-      tags: "business,currently-reading",
+      tags: "philosophy,currently-reading",
       myReview: "",
       dateRead: "",
     },
